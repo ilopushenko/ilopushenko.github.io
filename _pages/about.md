@@ -2,25 +2,52 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href="https://en.wikipedia.org/wiki/Mathematical_physics">Mathematical physics</a> | <a href="https://en.wikipedia.org/wiki/Computer_simulation">Computer modeling</a> | <a href="#">Interactive tools</a> | <a href="https://en.wikipedia.org/wiki/Knowledge_sharing">Knowledge sharing</a> <!--•--> @ <a href="https://www.oulu.fi/en/research-groups/biophotonics">University of Oulu</a>.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <!-- <p>Faculty of Information Technology and Electrical Engineering</p>
+    <p>University of Oulu</p>
+    <p>P.O.Box 4500, FI-90014<p> -->
 
 news: true # includes a list of news items
-latest_posts: true # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+latest_posts: false # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Welcome to my personal webpage and thanks for stopping by! 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I'm a researcher at the intersection of computational physics, numerical methods and electromagnetics, with focus on wave scattering. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+At the moment I conduct <b>postdoctoral studies</b> in Finland covering the fields of biophotonics and mesoscopic electrodynamics, building simulation tools that help to acquire new knowledge in between quantum and classical physics. 
+
+In perspective, I'm greatly interested in pushing forward <b>open science</b> and education through implementing software which enables to both visually and quantitavely <!-- demonstrate and process solutions to both basic school/university degree problems, as well as to --> <b>experience and feel</b> the modern problems in physics, all the way up from the school to the challenging cutting-edge level.
+
+<!--
+You may want to have a glimpse, for example, on the <b>web-based</b> 
+<ul>
+  <li>plane <a href="#">wave simulator</a>,</li>
+  <li><a href="#">complex beam</a> propagation,</li>
+  <li>mesoscopic <a href="#">Mie solver</a>,</li>
+</ul>
+and corresponding educative <a href="#">blog post series</a>. More projects, covering both elementary ready-to-use MATLAB tools and advanced modeling software, are available in my GitHub repositories and documented in the <a href="https://orcid.org/0000-0003-1970-019X">research papers</a>. 
+-->
+
+
+
+I also enjoy traveling, reading, hiking with friends, and discussing philosophy.
+<!-- need: blue colored links -->
+
+
+<!-- 
+k to your favorite [subreddit](http://reddit.com).  `prof_pic.jpg` and put it in the `img/` folder.
+
+ur [publications page](/al-folio/publications/) automatically.
+
+theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+-->
+

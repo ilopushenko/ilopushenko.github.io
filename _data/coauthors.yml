@@ -1,34 +1,47 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"eremin":
+  - firstname: ["Eremin", "Yu.", "Yu. A.", "Y.", "Yuri"]
+    url: https://cs.msu.ru/persons/eremin-yu-a
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"sveshnikov":
+  - firstname: ["Sveshnikov", "A. G."]
+    url: https://en.wikipedia.org/wiki/Aleksei_Sveshnikov
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"wriedt":
+  - firstname: ["Wriedt", "T.", "Thomas"]
+    url: https://www.iwt-bremen.de/en/institute/staff/detail/dr-ing-thomas-wriedt
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"sieryi":
+  - firstname: ["Sieryi", "Oleksii"]
+    url: https://scholar.google.com/citations?user=_TQkdoEAAAAJ
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"bykov":
+  - firstname: ["Bykov", "Alexander"]
+    url: https://www.oulu.fi/en/researchers/aliaksandr-bykau
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"sdobnov":
+  - firstname: ["Sdobnov", "Anton", "A."]
+    url: https://scholar.google.com/citations?user=_QMPNuMAAAAJ
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"borovkova":
+  - firstname: ["Borovkova", "Mariia", "M."]
+    url: https://scholar.google.ru/citations?user=VyNEj0UAAAAJ
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"zavestovskaya":
+  - firstname: ["Zavestovskaya", "I. N."]
+    url: http://www.researcherid.com/rid/N-1228-2015
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"dremin":
+  - firstname: ["Dremin", "Viktor"]
+    url: https://scholar.google.ru/citations?user=sY9tLgsAAAAJ
+
+"zharkikh":
+  - firstname: ["Zharkikh", "Elena"]
+    url: https://scholar.google.com/citations?user=y8WlLScAAAAJ
+
+"khebbache":
+  - firstname: ["Khebbache", "Naima"]
+    url: https://www.researchgate.net/profile/Naima-Khebbache
+
+"meglinski":
+  - firstname: ["Meglinski", "Igor", "I. V.", "I."]
+    url: https://scholar.google.co.nz/citations?user=vQoHA10AAAAJ

@@ -34,6 +34,9 @@
           <abbr class="badge">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
+      {% if entry.award %}
+          <span class="award badge">{{ entry.award }}</span>
+      {% endif %}
     </div>
   {% endif %}
 
@@ -165,20 +168,20 @@
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
       {% if entry.html %}
-        <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+        <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">link</a>
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf }}" target="_blank" class="btn btn-sm z-depth-0" role="button">PDF</a>
         {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank" class="btn btn-sm z-depth-0" role="button">PDF</a>
         {% endif %}
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
-          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a href="{{ entry.supp }}" target="_blank" class="btn btn-sm z-depth-0" role="button">Supp</a>
         {% else %}
-          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" target="_blank" class="btn btn-sm z-depth-0" role="button">Supp</a>
         {% endif %}
       {% endif %}
       {% if entry.video %}
@@ -192,9 +195,9 @@
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
-          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          <a href="{{ entry.poster }}" target="_blank" class="btn btn-sm z-depth-0" role="button">Poster</a>
         {% else %}
-          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" target="_blank" class="btn btn-sm z-depth-0" role="button">Poster</a>
         {% endif %}
       {% endif %}
       {% if entry.slides %}
@@ -206,6 +209,12 @@
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+      {% endif %}
+      {% if entry.enhtml %}
+        <a href="{{ entry.enhtml }}" class="btn btn-sm z-depth-0" role="button">en</a> 
+      {% endif %}
+      {% if entry.ruhtml %}
+        <a href="{{ entry.ruhtml }}" class="btn btn-sm z-depth-0" role="button">ru</a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}

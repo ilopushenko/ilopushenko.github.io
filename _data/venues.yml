@@ -1,6 +1,65 @@
+"JBO":
+  url: https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics
+  color: "#00369f"
+
+"CMLTP":
+  color: "#00369f"
+
+"Lobachevskii":
+  url: https://link.springer.com/journal/12202
+  color: "#00369f"  
+
+"PhysRev":
+  url: https://journals.aps.org/
+  color: "#00369f"
+  
+"CMC MSU":
+  url: https://cs.msu.ru/en  
+  color: "#00369f"
+
 "AJP":
   url: https://aapt.scitation.org/journal/ajp
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"CLEO Europe":
+  url: https://www.cleoeurope.org/
+  color: "#00369f"
+
+"IEEE":
+  url: https://ieeexplore.ieee.org/Xplore/home.jsp
+  color: "#00369f"
+
+"Proc. SPIE":
+  url: https://spie.org/conferences-and-exhibitions/conferences-and-exhibitions-calendar?filterEventType=conference;exhibition
+  color: "#00369f"
+
+"LJM":
+  url: https://link.springer.com/journal/12202
+  color: "#00369f"
+
+"SCATTPORT":
+  url: https://scattport.org/
+  color: "#00369f"
+
+"METANANO":
+  url: https://metanano.itmo.ru/2018/
+  color: "#00369f"
+
+"ARMIMP":
+  url: https://armimp.ru/materials/
+  color: "#00369f"
+
+"PIERS":
+  url: https://www.piers.org/
+  color: "#00369f"
+
+"G-RISC":
+  url: https://www.g-risc.org/
+  color: "#00369f"
+
+"G-RISC award":
+  url: https://www.g-risc.org/G-RISC-Award/index.html
+  color: "#00369f"
+
+"Ph.D.":
+  color: "#00369f"
