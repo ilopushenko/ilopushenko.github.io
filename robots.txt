@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ilopushenko.github.io/sitemap.xml
+Sitemap: https://ilopushenko.github.io//sitemap.xml
