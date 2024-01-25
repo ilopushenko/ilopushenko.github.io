@@ -1,8 +1,6 @@
-# Personal researcher webpage
-
 <div align="center">
 
-**Forked from [al-folio](https://github.com/alshedivat/al-folio): a simple, clean, and responsive [Jekyll](https://jekyllrb.com/) theme for academics.**
+**Personal researcher webpage. Forked from [al-folio](https://github.com/alshedivat/al-folio): a simple, clean, and responsive [Jekyll](https://jekyllrb.com/) theme for academics.**
 
 ---
 
