@@ -25,7 +25,7 @@ I'm a researcher at the intersection of computational physics, numerical methods
 
 At the moment I conduct <b>postdoctoral studies</b> in Finland covering the fields of biophotonics and mesoscopic electrodynamics, building simulation tools that help to acquire new knowledge in between quantum and classical physics. 
 
-In perspective, I'm greatly interested in pushing forward <b>open science</b> and education through implementing software which enables to both visually and quantitavely <!-- demonstrate and process solutions to both basic school/university degree problems, as well as to --> <b>experience and feel</b> the modern problems in physics, all the way up from the school to the challenging cutting-edge level.
+In perspective, I'm greatly interested in pushing forward <b>open science</b> and education through implementing software which enables to both visually and quantitavely <!-- demonstrate and process solutions to both basic school/university degree problems, as well as to --> <b>experience</b> the modern problems in physics, all the way up from the school to the challenging cutting-edge level.
 
 <!--
 You may want to have a glimpse, for example, on the <b>web-based</b> 
