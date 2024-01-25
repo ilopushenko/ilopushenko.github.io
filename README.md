@@ -1,4 +1,4 @@
-# Personal researcher webpage of Ivan Lopushenko
+# Personal researcher webpage
 
 <div align="center">
 
