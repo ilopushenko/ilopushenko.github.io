@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href="https://en.wikipedia.org/wiki/Mathematical_physics">Mathematical physics</a> | <a href="https://en.wikipedia.org/wiki/Computer_simulation">Computer modeling</a> | <a href="#">Interactive tools</a> | <a href="https://en.wikipedia.org/wiki/Knowledge_sharing">Knowledge sharing</a> <!--•--> @ <a href="https://www.oulu.fi/en/research-groups/biophotonics">University of Oulu</a>.
+subtitle: Mathematical physics</a> | Computer modeling | Interactive tools | Knowledge sharing <!--•--> @ <a href="https://www.oulu.fi/en/research-groups/biophotonics">University of Oulu</a>.
 
 profile:
   align: right
@@ -40,14 +40,6 @@ and corresponding educative <a href="#">blog post series</a>. More projects, cov
 
 
 I also enjoy traveling, reading, hiking with friends, and discussing philosophy.
-<!-- need: blue colored links -->
 
-
-<!-- 
-k to your favorite [subreddit](http://reddit.com).  `prof_pic.jpg` and put it in the `img/` folder.
-
-ur [publications page](/al-folio/publications/) automatically.
-
-theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
--->
+<!-- <a href="https://en.wikipedia.org/wiki/Mathematical_physics">Mathematical physics</a> | <a href="https://en.wikipedia.org/wiki/Computer_simulation">Computer modeling</a> | <a href="#">Interactive tools</a> | <a href="https://en.wikipedia.org/wiki/Knowledge_sharing">Knowledge sharing</a> -->
 
