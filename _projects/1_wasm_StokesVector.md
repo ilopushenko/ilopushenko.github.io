@@ -11,6 +11,17 @@ related_publications: false
 
 <!------------------------------------------------------------ preload WASM shared library ------------------------------------------------------------>
 <script async type="text/javascript" src="/wasm/wasm_StokesLibrary.js"></script>
+<script>
+	// defer WASM library load
+	var Module = {
+            onRuntimeInitialized: function () {
+                // Run Function
+                Module._wasm_StokesLibrary_initialize();
+                Module._wasm_initStokesObject();
+                //Module._mylibrary_terminate();
+            }
+        };
+</script>
 <!------------------------------------------------------------ preload PLOTLY shared library ------------------------------------------------------------>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
@@ -78,7 +89,7 @@ Some short remarks before you begin working with the app:
 <!-- Content of the 2nd tab: to input normalized Stokes vector values  -->
 <div id="NormalizedStokes" class="tabcontent">
 <form name='StokesNormalizedForm'>
-	<table cellspacing="0" class="table-sm table-striped" width="100%" id="normalizedStokesTable">
+	<table cellspacing="0" class="table-bordered table-sm table-striped" width="100%" id="normalizedStokesTable">
 	<thead>
        <tr>
 	      <th style="width:10%">ID</th>
@@ -108,7 +119,7 @@ Some short remarks before you begin working with the app:
 <!-- Content of the 3rd tab: to input intensity values  -->
 <div id="IntensityDiv" class="tabcontent">
 <form name='IntensityForm'>
-	<table cellspacing="0" class="table-sm table-striped" width="100%" id="intensityTable">
+	<table cellspacing="0" class="table-bordered table-sm table-striped" width="100%" id="intensityTable">
 	<thead>
        <tr>
 	      <th style="width:10%">ID</th>
@@ -138,7 +149,7 @@ Some short remarks before you begin working with the app:
 <!-- Content of the 4th tab: to input coherency matrix  -->
 <div id="CoherencyDiv" class="tabcontent">
 <form name='CoherencyForm'>
-	<table cellspacing="0" class="table-sm table-striped" width="100%" id="coherencyTable">
+	<table cellspacing="0" class="table-bordered table-sm table-striped" width="100%" id="coherencyTable">
 	<thead>
        <tr>
 	      <th style="width:10%">ID</th>
@@ -167,7 +178,7 @@ Some short remarks before you begin working with the app:
 <!-- https://www.w3schools.com/bootstrap/bootstrap_tables.asp -->
 <!-- CONDENSED TABLE worked !!!!!!!!! and also inside container and responsive !!! -->
 <div class="caption">Attention: all tabs are simultaneously updated with the latest submitted data. <br /> Main results are returned in the table below.</div>
-<table cellspacing="0" class="table-sm table-striped" id="resultsTable"> <!-- class="table-hover table table-condensed table-bordered"> data-toggle="table" data-click-to-select="true" data-search="true" -->
+<table cellspacing="0" class="table-bordered table-sm table-striped" id="resultsTable"> <!-- class="table-hover table table-condensed table-bordered"> data-toggle="table" data-click-to-select="true" data-search="true" -->
 <thead>
 		<tr>
 			<th style="width:10%">ID</th>
@@ -1695,16 +1706,6 @@ function makeCoherencyRowConstant(idx) {
 	// initialize plot divs
 	const ellipsePlot = document.getElementById('ellipsePlot');
 	const spherePlot = document.getElementById('spherePlot');
-	
-	// defer WASM library load
-	var Module = {
-            onRuntimeInitialized: function () {
-                // Run Function
-                Module._wasm_StokesLibrary_initialize();
-                Module._wasm_initStokesObject();
-                //Module._mylibrary_terminate();
-            }
-        };
 	
 	// defer plotly and Stokes initialization: https://github.com/plotly/dash/issues/1041
 	var interval = setInterval(function(){
