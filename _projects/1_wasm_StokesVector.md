@@ -30,7 +30,7 @@ related_publications: false
 <!------------------------------------------------------------ PAGE CONTENT: introduction ------------------------------------------------------------>
 This is a small app to compute and visualize parameters of either fully or partially polarized light from the supplied Stokes vector $$ S=[S_0, S_1, S_2, S_3]^T=[I, Q, U, V]^T $$. Source code for the underlying MATLAB® class will be available on GitHub and MATLAB Exchange. <!-- Examples provided below can also be launched in GNU Octave, particularly in its web version. -->
 
-In the following, we fully comply with [Born and Wolf (1980)](https://www.sciencedirect.com/book/9780080264820/principles-of-optics), $1.4 and $10.8. <!-- in particular, decision and ispiration comes from .... --> For more details, please refer to these chapters or see theoretical reference at the bottom of the page.<!--, see theoretical reference at the bottom of the page, and/or have a look at the blog post. -->
+In the following, we fully comply with [Born and Wolf (1980)](https://www.sciencedirect.com/book/9780080264820/principles-of-optics), sections §1.4 and §10.8. <!-- in particular, decision and ispiration comes from .... --> For more details, please refer to these chapters or see theoretical reference at the bottom of the page.<!--, see theoretical reference at the bottom of the page, and/or have a look at the blog post. -->
 
 Some short remarks before you begin working with the app:
 
