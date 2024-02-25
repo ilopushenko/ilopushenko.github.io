@@ -2,7 +2,7 @@
 layout: page
 title: Polarization state
 permalink: /projects/stokes
-description: Calculator of the polarization ellipse parameters and other data from the user-defined Stokes vector
+description: Calculator of the polarization ellipse parameters and other data obtainable from the user-defined Stokes vector
 img: assets/img/12.jpg
 importance: 1
 category: polarization
@@ -37,7 +37,7 @@ Some short remarks before you begin working with the app:
 * Input are Stokes vector values (can be power in e.g. [W/m<sup>2</sup>], or in normalized dimensionless units). The main rule is that relations $$S_0^2\geq S_1^2+S_2^2+S_3^2$$ and $$S_0\geq0$$ must always hold;
 * Several input vectors can be provided to compare them;
 * Primary outputs are degrees of polarization and parameters of the polarization ellipse;
-* Additional outputs are: 6 intensity values $$I_H, I_V, I_D, I_A, I_R, I_L$$, Wolf's coherency matrix $$\mathbf{J}$$ (accessible via tabs below) and normalized Stokes vector values (accessible via Poincaré sphere);
+* Additional outputs are 6 intensity values $$I_H, I_V, I_D, I_A, I_R, I_L$$, Wolf's coherency matrix $$\mathbf{J}$$ (accessible via tabs below) and normalized Stokes vector values (accessible via Poincaré sphere);
 * Computed ellipse and Poincare sphere depiction of the $$S$$ vector are presented on 2D and 3D plots below.
 <!-- * It is also possible to use 6 intensity measurements OR normalized Stokes vectors with DOP and power as input parameters. Submitted data is preserved when switching tabs. -->
 
@@ -204,7 +204,7 @@ Some short remarks before you begin working with the app:
 		<td style="width:10%"></td>
 	</tr>
 </table>
-
+<br />
 
 <!-- Plotly graphs -->    
 <div class="row">
@@ -354,15 +354,6 @@ function openTab(evt, tabName) {
 		  tooltipElem = document.createElement('div');
 		  tooltipElem.className = 'tooltipHovering';
 		  tooltipElem.id = 'tooltipWithFormula';
-		  //tooltipElem.style.position = 'fixed';      // вот тут можно if светлая или темная тема
-		  //tooltipElem.style.padding = '10px 20px';
-		  //tooltipElem.style.border = '1px solid #b3c9ce';
-		  ////tooltipElem.style.border-radius = '4px'; //object.style.borderRadius
-		  ////tooltipElem.style.text-align = 'center';
-		  //tooltipElem.style.font = 'italic 14px/1.3 sans-serif';
-		  //tooltipElem.style.color = '#333';
-		  //tooltipElem.style.background = '#fff';
-		  ////tooltipElem.style.box-shadow = '3px 3px 3px rgba(0, 0, 0, .3)';
 		  
 		  tooltipElem.innerHTML = tooltipHtml;
 		  document.body.append(tooltipElem);
@@ -384,10 +375,7 @@ function openTab(evt, tabName) {
 		  
 		  // https://www.sqlpac.com/en/documents/mathjax-advanced-javascript-rendering-methods.html
 		  var HUB = window.MathJax;
-		  //console.log(HUB);
-		  //MathJax.Hub.Queue(["Typeset",MathJax.Hub,"tooltipWithFormula"]);
 		  node = document.getElementById('tooltipWithFormula');
-		  //MathJax.typesetPromise([node]).then(() => {});
 		  MathJax.typeset([node]);
 		};
 
