@@ -6,6 +6,7 @@ description: Calculator of the polarization ellipse parameters and other data fr
 img: assets/img/12.jpg
 importance: 1
 category: polarization
+disqus_comments: true
 related_publications: false
 ---
 
@@ -25,18 +26,19 @@ related_publications: false
 <!------------------------------------------------------------ preload PLOTLY shared library ------------------------------------------------------------>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-<!------------------------------------------------------------ PAGE CONTENT: introduction ------------------------------------------------------------>
-This is a small app to compute and visualize parameters of either fully or partially polarized light from the supplied Stokes vector $$ S=[S_0, S_1, S_2, S_3]^T=[I, Q, U, V]^T $$. <!-- вероятно, MathJax требует некоей доп настройки ??? --> Source code for the underlying MATLAB® class is available on GitHub and MATLAB Exchange. Examples can also be launched in GNU Octave, particularly in its web version.
 
-In the following, we fully comply with [Born and Wolf (1980)](https://www.sciencedirect.com/book/9780080264820/principles-of-optics), chapter ... paragraph ... and chapter ... paragraph. For more details, please refer to these chapters, see theoretical reference at the bottom of the page, and/or have a look at the blog post.
+<!------------------------------------------------------------ PAGE CONTENT: introduction ------------------------------------------------------------>
+This is a small app to compute and visualize parameters of either fully or partially polarized light from the supplied Stokes vector $$ S=[S_0, S_1, S_2, S_3]^T=[I, Q, U, V]^T $$. Source code for the underlying MATLAB® class will be available on GitHub and MATLAB Exchange. <!-- Examples provided below can also be launched in GNU Octave, particularly in its web version. -->
+
+In the following, we fully comply with [Born and Wolf (1980)](https://www.sciencedirect.com/book/9780080264820/principles-of-optics), $1.4 and $10.8. <!-- in particular, decision and ispiration comes from .... --> For more details, please refer to these chapters or see theoretical reference at the bottom of the page.<!--, see theoretical reference at the bottom of the page, and/or have a look at the blog post. -->
 
 Some short remarks before you begin working with the app:
 
-* Input are Stokes vector values in arbitrary units (can be intensity, power, or normalized dimensionless units). The main rule is that relation $$S_0^2\geq S_1^2+S_2^2+S_3^2$$ must always hold;
+* Input are Stokes vector values (can be power in e.g. [W/m<sup>2</sup>], or in normalized dimensionless units). The main rule is that relations $$S_0^2\geq S_1^2+S_2^2+S_3^2$$ and $$S_0\geq0$$ must always hold;
 * Several input vectors can be provided to compare them;
 * Primary outputs are degrees of polarization and parameters of the polarization ellipse;
-* Additional outputs are: 6 intensity values that correspond to the provided Stokes vector, Wolf's coherency matrix (accessible via tabs below) and normalized Stokes vector values (accessible via Poincaré sphere);
-* Computed ellipse and Poincare sphere depiction of the S vector are presented on 2D and 3D plots below;
+* Additional outputs are: 6 intensity values $$I_H, I_V, I_D, I_A, I_R, I_L$$, Wolf's coherency matrix $$\mathbf{J}$$ (accessible via tabs below) and normalized Stokes vector values (accessible via Poincaré sphere);
+* Computed ellipse and Poincare sphere depiction of the $$S$$ vector are presented on 2D and 3D plots below.
 <!-- * It is also possible to use 6 intensity measurements OR normalized Stokes vectors with DOP and power as input parameters. Submitted data is preserved when switching tabs. -->
 
 <!------------------------------------------------------------ PAGE CONTENT: application ------------------------------------------------------------>
@@ -153,7 +155,7 @@ Some short remarks before you begin working with the app:
 	<thead>
        <tr>
 	      <th style="width:10%">ID</th>
-          <th style="width:50%">$$\hat{J}$$</th>
+          <th style="width:50%">$$\mathbf{J}$$</th>
 		  <th style="width:20%"></th>
 		  <th style="width:20%"></th>
        </tr>
@@ -185,10 +187,10 @@ Some short remarks before you begin working with the app:
 			<th style="width:10%">$$DoP$$</th>
 			<th style="width:10%">$$DoLP$$</th>
 			<th style="width:10%">$$DoCP$$</th>
-			<th style="width:10%">Azimuth (rad)</th>
-			<th style="width:10%">Ellipticity (rad)</th>
-			<th style="width:10%">Phase diff (rad)</th>
-			<th style="width:10%">Helicity</th>
+			<th style="width:10%"><div class="row justify-content-center"><div class="col-6">$$\mathrm{Azimuth}\:\psi$$</div><div class="col-1" data-tooltip="$$0\leq\psi<\pi$$">&#9432;</div></div></th>
+			<th style="width:10%"><div class="row justify-content-center"><div class="col-6">$$\mathrm{Ellipticity}\:\chi$$</div><div class="col-1" data-tooltip="$$-\pi/4\leq\chi\leq\pi/4$$">&#9432;</div></div></th>
+			<th style="width:10%"><div class="row justify-content-center"><div class="col-1">$$\delta$$</div><div class="col-1" data-tooltip="Phase difference">&#9432;</div></div></th>
+			<th style="width:10%" data-tooltip="$$0\leq\psi<\pi$$">$$\mathrm{Helicity}$$</th>  <!-- $$\delta$$ -->
 		</tr>
 </thead>
 	<tr style="display:none;">
@@ -239,8 +241,18 @@ Some short remarks before you begin working with the app:
 * Octave Online
 
 
-<div class="caption">Polarization state calculator. <br /> Pre-release version 0.1, 24.02.2024.</div>
+<div class="caption">Polarization state calculator. <br /> 
+This tool has been inspired by fundamental relation between polarization and quantum properties of light, and by processing of polarimetric measurements data at <a href="https://www.oulu.fi/en/research-groups/biophotonics">OPEM Unit</a> within <a href="https://ieeexplore.ieee.org/document/9622320">AoF</a> and <a href="https://www.sintef.no/en/projects/2022/metahilight/">MetaHiLight</a> projects. <br />
+Author warmly acknowledges support and feedback from colleagues and friends. <br />
+Built with <a href="https://www.mathworks.com/matlabcentral/fileexchange/69973-generatejavascriptusingmatlabcoder">MATLAB Coder and Emscripten</a>. Pre-release version 0.1, 24.02.2024.</div>
 
+<a href=""></a>
+
+<!--
+[OPEM Unit](https://www.oulu.fi/en/research-groups/biophotonics)
+[AoF](https://ieeexplore.ieee.org/document/9622320)
+[MetaHiLight](https://www.sintef.no/en/projects/2022/metahilight/)
+-->
 
 
 <!------------------------------------------------------------ ADDITIONAL STYLES ------------------------------------------------------------>
@@ -326,8 +338,66 @@ function openTab(evt, tabName) {
 </script>
 
 
-<!---------------------------- HOVERING TOOLTIPS ---------------------------->
-<!-- placeholder -->
+<!---------------------------- HOVERING TOOLTIPS: https://learn.javascript.ru/task/behavior-tooltip  ---------------------------->
+<script>
+		let tooltipElem;
+
+		document.onmouseover = function(event) {
+		  console.log('detected');
+		  let target = event.target;
+
+		  // если у нас есть подсказка...
+		  let tooltipHtml = target.dataset.tooltip;
+		  if (!tooltipHtml) return;
+
+		  // ...создадим элемент для подсказки
+		  tooltipElem = document.createElement('div');
+		  tooltipElem.className = 'tooltipHovering';
+		  tooltipElem.id = 'tooltipWithFormula';
+		  //tooltipElem.style.position = 'fixed';      // вот тут можно if светлая или темная тема
+		  //tooltipElem.style.padding = '10px 20px';
+		  //tooltipElem.style.border = '1px solid #b3c9ce';
+		  ////tooltipElem.style.border-radius = '4px'; //object.style.borderRadius
+		  ////tooltipElem.style.text-align = 'center';
+		  //tooltipElem.style.font = 'italic 14px/1.3 sans-serif';
+		  //tooltipElem.style.color = '#333';
+		  //tooltipElem.style.background = '#fff';
+		  ////tooltipElem.style.box-shadow = '3px 3px 3px rgba(0, 0, 0, .3)';
+		  
+		  tooltipElem.innerHTML = tooltipHtml;
+		  document.body.append(tooltipElem);
+
+		  // спозиционируем его сверху от аннотируемого элемента (top-center)
+		  let coords = target.getBoundingClientRect();
+
+		  let left = coords.left + target.offsetWidth + 5; //(target.offsetWidth - tooltipElem.offsetWidth) / 2;
+		  if (left < 0) left = 0; // не заезжать за левый край окна
+
+		  let top = coords.top - tooltipElem.offsetHeight - 5;
+		  if (top < 0) { // если подсказка не помещается сверху, то отображать её снизу
+			top = coords.top + target.offsetHeight + 5;
+		  }
+
+		  tooltipElem.style.left = left + 'px';
+		  tooltipElem.style.top = top + 'px';
+		  console.log(top);
+		  
+		  // https://www.sqlpac.com/en/documents/mathjax-advanced-javascript-rendering-methods.html
+		  var HUB = window.MathJax;
+		  //console.log(HUB);
+		  //MathJax.Hub.Queue(["Typeset",MathJax.Hub,"tooltipWithFormula"]);
+		  node = document.getElementById('tooltipWithFormula');
+		  //MathJax.typesetPromise([node]).then(() => {});
+		  MathJax.typeset([node]);
+		};
+
+		document.onmouseout = function(e) {
+		  if (tooltipElem) {
+			tooltipElem.remove();
+			tooltipElem = null;
+		  }
+    };
+</script>
 
 
 <!---------------------------- HELPERS ---------------------------->
