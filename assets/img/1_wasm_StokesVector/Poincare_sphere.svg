@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="360"
+   height="360"
+   version="1.1"
+   id="svg28"
+   sodipodi:docname="Poincare_sphere.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs28" />
+  <sodipodi:namedview
+     id="namedview28"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.2583333"
+     inkscape:cx="180"
+     inkscape:cy="180"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg28" />
+  <clipPath
+     id="clip1">
+    <path
+       d="M -200,-200 L 200,-200 L 200,200 L -200,200 L -200,-52 L 0,-52 L 0,-82 L -200,-82 L -200,-200 Z"
+       id="path1" />
+  </clipPath>
+  <g
+     id="poincare"
+     transform="translate(159.5, 195.5) scale(1,-1)">
+    <path
+       d="M -143,0 A 143,62 0 1 0 143,0"
+       style="stroke:#808080;stroke-width:1;stroke-dasharray:6,6;fill:none;"
+       id="path2" />
+    <path
+       d="M 0,143 A 143,60 -90 1 1 0,-143"
+       transform="rotate(13)"
+       clip-path="url(#clip1)"
+       style="stroke:#808080;stroke-dasharray:6,6;stroke-width:1;fill:none;"
+       id="path3" />
+    <path
+       d="M -125,0 H 186"
+       transform="rotate(-135)"
+       style="stroke:#000000;stroke-width:1;fill:none;"
+       id="path4" />
+    <path
+       d="M 0,-2.5 L 4,-3 L 2,4 L 0,12 L -2,4 L -4,-3 L 0,-2.5 Z"
+       transform="rotate(-225) translate(0,186)"
+       style="stroke:none;fill:#000000;"
+       id="path5" />
+    <path
+       d="M -155,0 H 188"
+       transform="rotate(-10.6)"
+       style="stroke:#000000;stroke-width:1;fill:none;"
+       id="path6" />
+    <path
+       d="M 0,-2.5 L 4,-3 L 2,4 L 0,12 L -2,4 L -4,-3 L 0,-2.5 Z"
+       transform="rotate(-10.6) translate(188,0) rotate(270)"
+       style="stroke:none;fill:#000000;"
+       id="path7" />
+    <path
+       d="M 0,-163 V 177"
+       style="stroke:#000000;stroke-width:1;fill:none;"
+       id="path8" />
+    <path
+       d="M 0,-2.5 L 4,-3 L 2,4 L 0,12 L -2,4 L -4,-3 L 0,-2.5 Z"
+       transform="translate(0,177)"
+       style="stroke:none;fill:#000000;"
+       id="path9" />
+    <circle
+       cx="0"
+       cy="0"
+       r="143"
+       style="stroke:#000000;stroke-width:2;fill:none;"
+       id="circle9" />
+    <path
+       d="M 0,-143 A 143,60 -90 1 1 0,143"
+       transform="rotate(13)"
+       style="stroke:#000000;stroke-width:1;fill:none;"
+       id="path10" />
+    <path
+       d="M -143,0 A 143,62 0 1 1 143,0"
+       style="stroke:#000000;stroke-width:1;fill:none;"
+       id="path11" />
+    <path
+       d="M 0,0 L -56.88,-56.88 A 143,62 0 0 1 66.73,-54.84 L 0,0 Z"
+       style="stroke:none;fill:#204a87;opacity:0.2;"
+       id="path12" />
+    <path
+       d="M 0,0 L 52.68,-68.44 A 143,60 -90 0 1 53.71,63.72 L 0,0 Z"
+       transform="rotate(13)"
+       style="stroke:none;fill:#f57900;opacity:0.3;"
+       id="path13" />
+    <path
+       d="M 52.68,-68.44 A 143,60 -90 0 1 53.71,63.72"
+       transform="rotate(13)"
+       style="stroke:#f57900;stroke-width:2;fill:none;"
+       id="path16" />
+    <path
+       d="M 0,0 L -10,3 L -10,-3 L 0,0 Z"
+       transform="translate(38, 74.17) rotate(112)"
+       style="stroke:#f57900;stroke-width:2;fill:#f57900;"
+       id="path17" />
+    <path
+       d="M -56.88,-56.88 A 143,62 0 0 1 62,-55.87"
+       style="stroke:#204a87;stroke-width:2;fill:none;"
+       id="path18" />
+    <path
+       d="M 0,0 L -10,3 L -10,-3 L 0,0 Z"
+       transform="translate(66.73,-54.84) rotate(11)"
+       style="stroke:#204a87;stroke-width:2;fill:#204a87;"
+       id="path19" />
+    <circle
+       cx="38"
+       cy="74.17"
+       r="4"
+       style="stroke:none;fill:#5c3566;"
+       id="circle19" />
+    <circle
+       cx="0"
+       cy="0"
+       r="3"
+       style="stroke:none;fill:#000000;"
+       id="circle20" />
+    <text
+       transform="scale(1,-1)"
+       x="64"
+       y="-10"
+       xml:space="preserve"
+       style="font-size:28px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif Italic"
+       id="text20"><tspan
+   x="64"
+   y="-10"
+   id="tspan20">2χ</tspan>&#10;    </text>
+    <text
+       transform="scale(1,-1)"
+       x="-43"
+       y="98"
+       xml:space="preserve"
+       style="font-size:28px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif Italic"
+       id="text21"><tspan
+   x="-43"
+   y="87"
+   id="tspan21">2ψ</tspan>&#10;    </text>
+    <g
+       transform="translate(-127,-154) scale(1,-1)"
+       id="g24">
+      <text
+         x="0"
+         y="0"
+         xml:space="preserve"
+         style="font-size:32px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif Italic"
+         id="text23"><tspan
+   x="0"
+   y="0"
+   id="tspan23">S</tspan>&#10;      </text>
+      <text
+         x="19.6"
+         y="7.8"
+         style="font-size:24px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif Italic"
+         id="text24"><tspan
+           x="19.6"
+           y="7.8"
+           id="tspan24">1</tspan></text>
+    </g>
+    <g
+       transform="translate(157,-65) scale(1,-1)"
+       id="g26">
+      <text
+         x="0"
+         y="0"
+         xml:space="preserve"
+         style="font-size:32px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif Italic"
+         id="text25"><tspan
+   x="0"
+   y="0"
+   id="tspan25">S</tspan>&#10;      </text>
+      <text
+         x="19.6"
+         y="7.8"
+         style="font-size:24px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif Italic"
+         id="text26"><tspan
+           x="19.6"
+           y="7.8"
+           id="tspan26">2</tspan></text>
+    </g>
+    <g
+       transform="translate(6,167) scale(1,-1)"
+       id="g28">
+      <text
+         x="0"
+         y="0"
+         xml:space="preserve"
+         style="font-size:32px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif Italic"
+         id="text27"><tspan
+   x="0"
+   y="0"
+   id="tspan27">S</tspan>&#10;      </text>
+      <text
+         x="19.6"
+         y="7.8"
+         style="font-size:24px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif Italic"
+         id="text28"><tspan
+           x="19.6"
+           y="7.8"
+           id="tspan28">3</tspan></text>
+    </g>
+  </g>
+</svg>
