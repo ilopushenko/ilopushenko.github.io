@@ -229,7 +229,9 @@ Using polarizer-compensator configuration (experimental setup with e.g. [linear 
 
 In the literature, there are several other notations for these intensity values, introduced by different authors with different backrounds and targeting different purposes. A good review is done by [M. Mishchenko (2014)](#further-reading) and [D. Goldstein (2011)](#further-reading). Most notably, in the experimental configuration with polarizer and compensating waveplate one would usually use angles $$\theta$$ and $$\varepsilon$$ of their rotation in order to describe the measured intensities: $$I=I(\theta,\varepsilon)$$. Then,
 
-$$I_H=I(0,0), \:\: I_V=I\left(\dfrac{\pi}{2},0\right), \:\: I_D=I\left(\dfrac{\pi}{4},0\right), \:\: I_A=\left(\dfrac{3\pi}{4},0\right),$$
+$$I_H=I(0,0), \:\: I_V=I\left(\dfrac{\pi}{2},0\right),$$ 
+
+$$I_D=I\left(\dfrac{\pi}{4},0\right), \:\: I_A=\left(\dfrac{3\pi}{4},0\right),$$
 
 $$I_R=I\left(\dfrac{\pi}{4},\dfrac{\pi}{2}\right), \:\: I_L=I\left(\dfrac{3\pi}{4},\dfrac{\pi}{2}\right).$$
 
@@ -1923,9 +1925,9 @@ function makeCoherencyRowConstant(idx) {
 		let table1 = document.getElementById('customStokesTable');
 		let table3 = document.getElementById('intensityTable');
 		let table5 = document.getElementById('resultsTable');
-		table1.setAttribute("class", "table table-bordered table-sm table-striped table-hover");
-		table3.setAttribute("class", "table table-bordered table-sm table-striped table-hover"); // does not help much
-		table5.setAttribute("class", "table table-bordered table-sm table-striped table-hover");
+		//table1.setAttribute("class", "table table-bordered table-sm table-striped table-hover");
+		//table3.setAttribute("class", "table table-bordered table-sm table-striped table-hover"); // does not help much
+		//table5.setAttribute("class", "table table-bordered table-sm table-striped table-hover");
 		clearInterval(interval);
 	}	
 </script>
