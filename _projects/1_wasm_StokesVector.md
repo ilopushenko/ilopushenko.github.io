@@ -291,11 +291,11 @@ Depending on the amplitudes and phase difference, polarization ellipse can take 
 <div class="row">
 	<div class="row">
 		<div class="col-sm d-flex justify-content-center">
-			<img src="/assets/img/1_wasm_StokesVector/Polarisation_ellipse2.svg" class="img-fluid rounded z-depth-1" width="70%" height="auto" title="Polarization ellipse">
+			<img src="/assets/img/1_wasm_StokesVector/Polarisation_ellipse2.svg" class="img-fluid rounded z-depth-1" width="70%" height="auto" title="Polarization ellipse"><br />
 			<div class="caption">Figure 3. Polarization ellipse and its parameters. <!--2a corresponds to the red ellipse axes, 2b corresponds to the blue axes, arrow-->Arrow corresponds to the helicity direction. Picture source: <a href="https://en.wikipedia.org/wiki/Polarization_(waves)#Polarization_ellipse">wiki</a>.</div>
 		</div>
 		<div class="col-sm d-flex justify-content-center">		
-			<img src="/assets/img/1_wasm_StokesVector/Poincare_sphere.svg" class="img-fluid rounded z-depth-1" width="70%" height="auto" title="Poincaré sphere">
+			<img src="/assets/img/1_wasm_StokesVector/Poincare_sphere.svg" class="img-fluid rounded z-depth-1" width="70%" height="auto" title="Poincaré sphere"><br />
 			<div class="caption">Figure 4. Definition of the Poincaré sphere. Picture source: <a href="https://en.wikipedia.org/wiki/Unpolarized_light#Poincar%C3%A9_sphere">wiki</a>.</div>
 		</div>
 	</div>
