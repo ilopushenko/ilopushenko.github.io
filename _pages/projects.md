@@ -2,10 +2,10 @@
 layout: page
 title: tools
 permalink: /projects/
-description: A collection of self-developed interactive tools for scientific research or education.
+description: A work-in-process collection of self-developed interactive tools for scientific research or education.
 nav: true
 nav_order: 2
-display_categories: [polarization, scattering, proprietary, fun]
+display_categories: [polarization]
 horizontal: false
 ---
 
