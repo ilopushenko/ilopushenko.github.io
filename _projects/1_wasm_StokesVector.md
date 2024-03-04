@@ -2,11 +2,10 @@
 layout: page
 title: Polarization state
 permalink: /projects/stokes
-description: Calculator of the polarization ellipse parameters and other data obtainable from the user-defined Stokes vector
-img: assets/img/12.jpg
+description: Calculator of the polarization ellipse parameters and other data obtainable from the user-defined Stokes vector.
+img: assets/img/1_wasm_StokesVector/Poincare_sphere.svg
 importance: 1
 category: polarization
-disqus_comments: true
 related_publications: false
 ---
 
@@ -30,33 +29,36 @@ related_publications: false
 <!------------------------------------------------------------ PAGE CONTENT: introduction ------------------------------------------------------------>
 This is a small app to compute and visualize parameters of either fully or partially polarized light from the supplied Stokes vector $$ S=[S_0, S_1, S_2, S_3]^T=[I, Q, U, V]^T $$. Source code for the underlying MATLAB® class will be available on GitHub and MATLAB Exchange. <!-- Examples provided below can also be launched in GNU Octave, particularly in its web version. -->
 
-In the following, we fully comply with [Born and Wolf (1980)](https://www.sciencedirect.com/book/9780080264820/principles-of-optics), sections §1.4 and §10.8. <!-- in particular, decision and ispiration comes from .... --> For more details, please refer to these chapters or see theoretical reference at the bottom of the page.<!--, see theoretical reference at the bottom of the page, and/or have a look at the blog post. -->
+In the following, we fully comply with [M. Born and E. Wolf (1980)](#further-reading), sections §1.4 and §10.8. <!-- in particular, decision and ispiration comes from .... --> For more details, please refer to these chapters or see theoretical reference at the bottom of the page.<!--, see theoretical reference at the bottom of the page, and/or have a look at the blog post. -->
 
 Some short remarks before you begin working with the app:
+
+<div id="showBtnLoadDemo"></div> <!-- just for the hyperlink to work. impossible to assign id to the button because then hyperlink jumps lower due to the page header -->
 
 * Input are Stokes vector values (can be power in e.g. [W/m<sup>2</sup>], or in normalized dimensionless units). The main rule is that relations $$S_0^2\geq S_1^2+S_2^2+S_3^2$$ and $$S_0\geq0$$ must always hold;
 * Several input vectors can be provided to compare them;
 * Primary outputs are degrees of polarization and parameters of the polarization ellipse;
-* Additional outputs are 6 intensity values $$I_H, I_V, I_D, I_A, I_R, I_L$$, Wolf's coherency matrix $$\mathbf{J}$$ (accessible via tabs below) and normalized Stokes vector values (accessible via Poincaré sphere);
-* Computed ellipse and Poincare sphere depiction of the $$S$$ vector are presented on 2D and 3D plots below.
+* Additional outputs are 6 intensity values $$I_H, I_V, I_D, I_A, I_R, I_L$$ (accessible via tab switch below) <!--, Wolf's coherency matrix $$\mathbf{J}$$--> and normalized Stokes vector values (accessible via Poincaré sphere);
+* Computed ellipse and Poincaré sphere depiction of the $$S$$ vector are presented on 2D and 3D plots below.
 <!-- * It is also possible to use 6 intensity measurements OR normalized Stokes vectors with DOP and power as input parameters. Submitted data is preserved when switching tabs. -->
+
 
 <!------------------------------------------------------------ PAGE CONTENT: application ------------------------------------------------------------>
 <!-- button style: https://www.w3schools.com/bootstrap/bootstrap_buttons.asp -->
-<p align="right">
+<div align="right">
 <button class="btn btn-info btn-sm" onclick="loadDemoData()">Load demo data</button> 
 <!-- <button class="btn btn-primary btn-sm">Load from file</button> 
 <button class="btn btn-primary btn-sm">Save to file</button> -->
 <button class="btn btn-danger btn-sm" onclick="resetData()">Reset data</button> 
-</p>
+</div>
 
 <!-- Tab switcher -->
 <div class="tab">
-<div class="row">
-  <div class="col-sm"><button class="tablinks" onclick="openTab(event, 'ArbitraryStokes')" id="mainTab">Stokes vector (custom)</button></div>
+<div class="row"> <!-- justify-content-center"> -->
+  <div class="col-sm"><button class="tablinks" onclick="openTab(event, 'ArbitraryStokes')" id="mainTab">Stokes vector</button></div>
   <!-- <div class="col-sm"><button class="tablinks" onclick="openTab(event, 'NormalizedStokes')">Stokes vector (normalized)</button></div> -->
-  <div class="col-sm"><button class="tablinks" onclick="openTab(event, 'IntensityDiv')">Intensity measurements</button></div>
-  <div class="col-sm"><button class="tablinks" onclick="openTab(event, 'CoherencyDiv')">Wolf's coherency matrix</button></div>
+  <div class="col-sm"><button class="tablinks" onclick="openTab(event, 'IntensityDiv')">Intensity values</button></div>
+  <!-- <div class="col-sm"><button class="tablinks" onclick="openTab(event, 'CoherencyDiv')">Wolf's coherency matrix</button></div> -->
 </div>
 </div>
 
@@ -121,7 +123,7 @@ Some short remarks before you begin working with the app:
 <!-- Content of the 3rd tab: to input intensity values  -->
 <div id="IntensityDiv" class="tabcontent">
 <form name='IntensityForm'>
-	<table cellspacing="0" class="table-bordered table-sm table-striped" width="100%" id="intensityTable">
+	<table cellspacing="0" class="table-striped table-condensed table-sm" width="100%" id="intensityTable">
 	<thead>
        <tr>
 	      <th style="width:10%">ID</th>
@@ -179,8 +181,8 @@ Some short remarks before you begin working with the app:
 <!-- Results table  -->
 <!-- https://www.w3schools.com/bootstrap/bootstrap_tables.asp -->
 <!-- CONDENSED TABLE worked !!!!!!!!! and also inside container and responsive !!! -->
-<div class="caption">Attention: all tabs are simultaneously updated with the latest submitted data. <br /> Main results are returned in the table below.</div>
-<table cellspacing="0" class="table-bordered table-sm table-striped" id="resultsTable"> <!-- class="table-hover table table-condensed table-bordered"> data-toggle="table" data-click-to-select="true" data-search="true" -->
+<div class="caption">Attention: tabs are simultaneously updated with the latest submitted data. <br /> Main results are returned in the table below.</div>
+<table cellspacing="0" class="table-bordered table-sm table-striped table-condensed" id="resultsTable"> <!-- class="table-hover table table-condensed table-bordered"> data-toggle="table" data-click-to-select="true" data-search="true" -->
 <thead>
 		<tr>
 			<th style="width:10%">ID</th>
@@ -211,11 +213,11 @@ Some short remarks before you begin working with the app:
 	<div class="row">
 		<div class="col-sm">
 			<div id="ellipsePlot"></div> <br />
-			<div class="caption">Polarization ellipse caption</div>
+			<div class="caption">Figure 1. <a href="#showEllipseDefinition">Polarization ellipse</a> for each input beam.</div>
 		</div>
 		<div class="col-sm">
 			<div id="spherePlot"></div> <br />
-			<div class="caption">Sphere caption</div>
+			<div class="caption">Figure 2. Depiction of the normalized Stokes vector on the <a href="#showEllipseDefinition">Poincaré sphere</a>.</div>
 		</div>
 	</div>
 </div>
@@ -223,30 +225,152 @@ Some short remarks before you begin working with the app:
 
 ## Theoretical reference
 #### Measurement of Stokes vector
+Using polarizer-compensator configuration (experimental setup with e.g. [linear polarizer](https://en.wikipedia.org/wiki/Polarizer#Linear_polarizers) and [quarter-wave plate](https://en.wikipedia.org/wiki/Waveplate#Quarter-wave_plate)) it is possible to measure several possible [intensity values](https://en.wikipedia.org/wiki/Intensity_(physics)) of the light beam: intensity of the horizontally polarized component $$I_H$$, vertically polarized component $$I_V$$, diagonally polarized component $$I_D$$, antidiagonal component $$I_A$$, right $$I_R$$ and left $$I_L$$ circularly polarized components. This is in agreement with [Born and Wolf](#further-reading), §10.8, Eqns. (10) and (64). If light is unpolarized, then all components are equal to each other.
+
+In the literature, there are several other notations for these intensity values, introduced by different authors with different backrounds and targeting different purposes. A good review is done by [M. Mishchenko (2014)](#further-reading) and [D. Goldstein (2011)](#further-reading). Most notably, in the experimental configuration with polarizer and compensating waveplate one would usually use angles $$\theta$$ and $$\varepsilon$$ of their rotation in order to describe the measured intensities: $$I=I(\theta,\varepsilon)$$. Then,
+
+$$I_H=I(0,0), \:\: I_V=I\left(\dfrac{\pi}{2},0\right), \:\: I_D=I\left(\dfrac{\pi}{4},0\right), \:\: I_A=\left(\dfrac{3\pi}{4},0\right),$$
+
+$$I_R=I\left(\dfrac{\pi}{4},\dfrac{\pi}{2}\right), \:\: I_L=I\left(\dfrac{3\pi}{4},\dfrac{\pi}{2}\right).$$
+
+Finally, Stokes vector can be computed as
+
+$$S_0=I_H+I_V=I_D+I_A=I_R+I_L,$$
+
+$$S_1=I_H-I_V,$$
+
+$$S_2=I_D-I_A,$$
+
+$$S_3=I_R-I_L.$$
+
+{% details Click here to know more %} 
+In fact, only 4 intensity measurements are enough to compute the Stokes vector. All modern polarimeters, commercial and in-house alike, both well-developed and prototyped with account for new technological advances, rely on these equations - in one way or another. 
+
+> ##### WARNING
+>
+> In this app, currently there is no way to input intensity measurements. Right now, they are only recomputed from the Stokes vector provided by the user.
+{: .block-warning }
+
+{% enddetails %}
+
 
 #### Degrees of polarization
+Partially polarized light is characterized by its degree of polarization ($$DoP$$), [Born and Wolf](#further-reading), §10.8, Eqn. (68):
 
-#### Polarization ellipse
+$$DoP=\sqrt{S_1^2+S_2^2+S_3^2}/S_0.$$
+
+In turn, it can be further decomposed into degrees of linear ($$DoLP$$) and circular ($$DoCP$$) polarization:
+
+$$DoLP=\sqrt{S_1^2+S_2^2}/S_0,$$
+
+$$DoCP=\sqrt{S_3^2}/S_0=\vert S_3 \vert/S_0,$$
+
+$$DoP^2=DoLP^2 + DoCP^2.$$
+
+<!-- For more details on the given equations, please refer e.g. to [E. Collett]() [R. M. A. Azzam and N. M. Bashara (1977)], §, Eqn. (). --> Degrees of polarization are quite frequently employed in polarimetric applications. <!-- with one of the most typical scenarios ... . -->
+
+#### Polarization ellipse and Poincaré sphere
+Fully polarized light can be characterized with [polarization ellipse](https://en.wikipedia.org/wiki/Polarization_(waves)#Polarization_ellipse). 
+
+> ##### TIP
+>
+> In case of the partially polarized light, this app plots polarization ellipse for the fully polarized component of light, which intensity is equal to $$\sqrt{S_1^2+S_2^2+S_3^2}$$. Here, your data is not normalized in any way, and ellipses for all provided Stokes vectors are displayed with proper scale, which allows to compare them between each other both in terms of ellipse form and amplitudes of the underlying light waves.
+{: .block-tip }
+
+Each ellipse is a result of a superposition of two orthogonally linearly polarized waves with phase difference $$\delta$$ between them. Assuming that we deal with plane time-harmonic wave propagating along $$z$$ direction, the electromagnetic wave field is then described as $$\mathbf{E}=(E_x,E_y,0)$$, [Born and Wolf](#further-reading), §1.4, Eqn. (12):
+
+$$E_x = a_1 \cos{(\tau+\delta_1)}, \:\: E_y = a_2 \cos{(\tau+\delta_2)}, \:\: \tau=\omega t - \mathbf{kr}, \:\: \delta = \delta_2-\delta_1.$$
+
+Here, amplitudes $$a_1$$ and $$a_2$$ of both orthogonally polarized light waves are introduced. We would allow ourselves not to comment upon all other variables, directing the inquiring reader to the given reference for further reading. 
+
+<div id="showEllipseDefinition"></div>
+
+Depending on the amplitudes and phase difference, polarization ellipse can take different forms. Its axes are generally not parallel to either $$Ox$$ or $$Oy$$ of the Cartesian coordinate system, and can be rotated by azimuth angle $$\psi$$ with respect to them (see Figure 3): 
+
+
+<div class="row">
+	<div class="row">
+		<div class="col-sm text-center">
+			<img src="/assets/img/1_wasm_StokesVector/Polarisation_ellipse2.svg" class="img-fluid rounded z-depth-1" width="70%" height="auto" title="Polarization ellipse">
+			<div class="caption">Figure 3. Polarization ellipse and its parameters. <!--2a corresponds to the red ellipse axes, 2b corresponds to the blue axes, arrow-->Arrow corresponds to the helicity direction. Picture source: <a href="https://en.wikipedia.org/wiki/Polarization_(waves)#Polarization_ellipse">wiki</a>.</div>
+		</div>
+		<div class="col-sm text-center">		
+			<img src="/assets/img/1_wasm_StokesVector/Poincare_sphere.svg" class="img-fluid rounded z-depth-1" width="70%" height="auto" title="Poincaré sphere">
+			<div class="caption">Figure 4. Definition of the Poincaré sphere. Picture source: <a href="https://en.wikipedia.org/wiki/Unpolarized_light#Poincar%C3%A9_sphere">wiki</a>.</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- ![Polarization ellipse](/assets/img/1_wasm_StokesVector/Polarisation_ellipse2.svg) -->
+<!--
+
+<div class="row justify-content-sm-center">
+<div class="col-">
+
+</div>
+</div>
+<div class="caption">Figure 3. Polarization ellipse and its parameters. 2a corresponds to the red ellipse axes, 2b corresponds to the blue axes, arrow corresponds to the helicity direction. Picture source: <a href="https://en.wikipedia.org/wiki/Polarization_(waves)#Polarization_ellipse">wiki</a>.</div>
+
+-->
+
+Larger $$a$$ and smaller $$b$$ ellipse semi-axes, as well as ellipticity $$\chi$$ and azimuth $$\psi$$ are related to Stokes vector in the following way, Born and Wolf §1.4, Eqns. (23),(32),(43),(45a)-(45c):
+
+$$S_0=a_1^2+a_2^2=a^2+b^2,$$
+
+$$S_1=S_0\cos2\chi\cos2\psi,$$
+
+$$S_2=S_0\cos2\chi\sin2\psi,$$
+
+$$S_3=S_0\sin2\chi,$$
+
+$$\mathrm{tg}\chi=\mp b/a.$$
+
+These relations, resembling [connection](https://en.wikipedia.org/wiki/Spherical_coordinate_system#Cartesian_coordinates) between [Cartesian](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) and [spherical](https://en.wikipedia.org/wiki/Spherical_coordinate_system) coordinate systems, allow to depict Stokes vector as point on the sphere. This depiction of the polarization state is known as [Poincaré sphere](https://en.wikipedia.org/wiki/Unpolarized_light#Poincar%C3%A9_sphere).
+
+<!--
+Thus, while it is not possible to definitely/uniquely determine amplitudes $$a_1$$ and $$a_2$$ from the Stokes vector, it is still possible to obtain a unique polarization ellipse for any correctly defined set of $$S_0,S_1,S_2,S_3$$. --> <!-- Work with separate wave amplitudes is covered by a Plane Wave tool. -->
+
+Obvious special cases are the so-called degenerate states of the polarization ellipse, which are available in the current tool via ["Load demo data"](#showBtnLoadDemo) button. In particular, in the 1st degenerate state (Linear Horizontal Polarization, LHP) ellipse is reduced to the line aligning with $$Ox$$ Cartesian axes, in the 2nd (Linear Vertical Polarization, LVP) - to the line aligning with $$Oy$$ Cartesian axes, in the 3rd (linear diagonal polarization, L+45) and 4th (linear antidiagonal polarization L-45) - to the lines rotated at $$\psi_D=\pi/4$$ and $$\psi_A=3\pi/4$$, correspondingly, and finally, in 5th (right circular polarization, RCP) and 6th (left circular polarization, LCP) ellipse is reduced to the circle which one can follow either clockwise or counter-clockwise.
+
+
+<!--
+While amplitudes of the light can not be однозначно determined from the Stokes vector measurements, ???their relative interplay is evaluated via 
+
+...
+
+Here, we have introduced $$a$$, $$b<a$$, $$\psi$$, $$\chi$$. All these parameters have clear geometric interpretation:
+
+<picture of ellipse with everything>
+
+It is possible to further dive in the topic with considering elliptically polarized wave as superposition of the two linearly polarized waves, but this is already outside the scope of the current base web app.
+-->
 
 #### Wolf's coherency matrix
+It is worth noting that Stokes parameters bijectively (one-to-one) correspond to the coherency matrix introduced by Emil Wolf and which can be referenced in Born and Wolf, §10.8, Eqn. (63). In turn, this matrix is directly related to the concept of density matrix in quantum description of light: Wolf's matrix is in fact <!-- <can be treated as> --> a density matrix of the single photon. This is an important connection between wave and quantum properties of light which manifests itself through polarization. In the source code of this app, elements of the Wolf's coherency matrix are also evaluated, and there are plans on implementing web interface for the convenient coherency matrix analysis in this app - in the tab next to intensity values. For now, we conclude our short theoretical overview and provide all necessary references. 
+<!-- если прога будет сама сразу говорить, что это за свет, и бывает ли такой, и если не бывает, то почему - наверное это будет круто -->
 
 #### Further reading
-<!-- Мищенко, Goldstein -->
+1. [M. Born and E. Wolf. Principles of Optics, 6th Edition. Pergamon Press (1980).](https://en.m.wikipedia.org/wiki/Principles_of_Optics#:~:text=Principles%20of%20Optics%2C%20colloquially%20known,in%201959%20by%20Pergamon%20Press) <!-- https://www.sciencedirect.com/book/9780080264820/principles-of-optics#book-info -->
+2. [M. I. Mishchenko. Electromagnetic Scattering by Particles and Particle Groups: An Introduction. Cambridge University Press (2014).](https://www.cambridge.org/9780521519922)
+3. [D. H. Goldstein. Polarized Light, 3rd Edition. CRC Press (2011).](https://doi.org/10.1201/b10436)
+4. Wiki: numerous in-line references to Wikipedia articles all around this page.
+5. [MATLAB reference on polarization.](https://se.mathworks.com/help/phased/ug/polarized-fields.html)
+
+In any of the provided web resources, I recommend to strongly beware of typos: unfortunately, these are still quite common in polarization-related articles even in help resources for the proprietary products. This is mostly connected to either sign uncertainty, chosen form of the harmonic wave time dependence, or to the different notations used by various authors to characterize polarization ellipse and other light parameters.
 
 
-## Source code
+## Source code (available soon)
 
 * MATLAB Exchange
 * GitHub
 * Octave Online
 
 
-<div class="caption">Polarization state calculator. <br /> 
-This tool has been inspired by fundamental relation between polarization and quantum properties of light, and by processing of polarimetric measurements data at <a href="https://www.oulu.fi/en/research-groups/biophotonics">OPEM Unit</a> within <a href="https://ieeexplore.ieee.org/document/9622320">AoF</a> and <a href="https://www.sintef.no/en/projects/2022/metahilight/">MetaHiLight</a> projects. <br />
+<div class="caption">Polarization state calculator. Preview version 0.2, 04.03.2024. <br /> 
+This tool has been inspired by fundamental relation between polarization and quantum properties of light, and by processing of polarimetric measurements data at <a href="https://www.oulu.fi/en/research-groups/biophotonics">OPEM Unit</a> within <a href="https://ieeexplore.ieee.org/document/9622320">Academy of Finland</a> and <a href="https://www.sintef.no/en/projects/2022/metahilight/">MetaHiLight</a> projects. <br />
 Author warmly acknowledges support and feedback from colleagues and friends. <br />
-Built with <a href="https://www.mathworks.com/matlabcentral/fileexchange/69973-generatejavascriptusingmatlabcoder">MATLAB Coder and Emscripten</a>. Pre-release version 0.1, 24.02.2024.</div>
-
-<a href=""></a>
+Built with <a href="https://www.mathworks.com/matlabcentral/fileexchange/69973-generatejavascriptusingmatlabcoder">MATLAB Coder and Emscripten</a>. Runs locally in the web browser with <a href="https://webassembly.org">WebAssembly</a>. </div>
 
 <!--
 [OPEM Unit](https://www.oulu.fi/en/research-groups/biophotonics)
@@ -280,6 +404,10 @@ Built with <a href="https://www.mathworks.com/matlabcentral/fileexchange/69973-g
     overflow: hidden;
     border: none;
     background-color: var(--global-card-bg-color);
+	//margin: auto;
+	float: left;
+    width: 50%;
+	padding: 10px;
 }
 /* border: 1px solid var(--global-text-color-light); */
 
@@ -343,7 +471,7 @@ function openTab(evt, tabName) {
 		let tooltipElem;
 
 		document.onmouseover = function(event) {
-		  console.log('detected');
+		  //console.log('detected');
 		  let target = event.target;
 
 		  // если у нас есть подсказка...
@@ -371,7 +499,7 @@ function openTab(evt, tabName) {
 
 		  tooltipElem.style.left = left + 'px';
 		  tooltipElem.style.top = top + 'px';
-		  console.log(top);
+		  //console.log(top);
 		  
 		  // https://www.sqlpac.com/en/documents/mathjax-advanced-javascript-rendering-methods.html
 		  var HUB = window.MathJax;
@@ -909,6 +1037,8 @@ function editIntensityRow(event, idx) {
   let table = document.getElementById("intensityTable");		
 	if (event==null){
 		let row   = table.rows[idx];
+		//row.style = "display:none"; // TEMPORARY, WHILE INTENSITY INPUT DOES NOT WORK
+		/*
 		row.cells[1].innerHTML = "<input type='number' name='iH' id='IHinput' min='0' max='99' step='0.01' size='3' value='' required pattern='\S(.*\S)?' title='This field is required'>";
 		row.cells[2].innerHTML = "<input type='number' name='iV' id='IVinput' min='0' max='99' step='0.01' size='3' value='' required pattern='\S(.*\S)?' title='This field is required'>";
 		row.cells[3].innerHTML = "<input type='number' name='iD' id='IDinput' min='0' max='99' step='0.01' size='3' value='' required pattern='\S(.*\S)?' title='This field is required'>";
@@ -916,6 +1046,7 @@ function editIntensityRow(event, idx) {
 		row.cells[5].innerHTML = "<input type='number' name='iR' id='IRinput' min='0' max='99' step='0.01' size='3' value='' required pattern='\S(.*\S)?' title='This field is required'>";
 		row.cells[6].innerHTML = "<input type='number' name='iL' id='ILinput' min='0' max='99' step='0.01' size='3' value='' required pattern='\S(.*\S)?' title='This field is required'>";
 		row.cells[7].innerHTML = "<button class='btn btn-primary btn-sm' onclick='onAddIntensity(event)' id='inputIntensity' style='display:none;'>Submit</button> <button class='btn btn-primary btn-sm' disabled='true'>Submit</button>";
+		*/
 	} else {
 		event.preventDefault();
 		
@@ -935,6 +1066,8 @@ function editIntensityRow(event, idx) {
 		
 		let idx = event.target.closest('tr').rowIndex;
 	    let row = table.rows[idx];
+		//row.style = "display:none";
+		/*
 		row.cells[1].innerHTML = "<input type='number' name='iH' id='IHedit' min='0' max='99' step='0.01' size='3' value='" + Number(row.cells[1].innerHTML) +"' required pattern='\S(.*\S)?' title='This field is required'>";
 		row.cells[2].innerHTML = "<input type='number' name='iV' id='IVedit' min='0' max='99' step='0.01' size='3' value='" + Number(row.cells[2].innerHTML) +"' required pattern='\S(.*\S)?' title='This field is required'>";
 		row.cells[3].innerHTML = "<input type='number' name='iD' id='IDedit' min='0' max='99' step='0.01' size='3' value='" + Number(row.cells[3].innerHTML) +"' required pattern='\S(.*\S)?' title='This field is required'>";
@@ -942,6 +1075,7 @@ function editIntensityRow(event, idx) {
 		row.cells[5].innerHTML = "<input type='number' name='iR' id='IRedit' min='0' max='99' step='0.01' size='3' value='" + Number(row.cells[5].innerHTML) +"' required pattern='\S(.*\S)?' title='This field is required'>";
 		row.cells[6].innerHTML = "<input type='number' name='iL' id='ILedit' min='0' max='99' step='0.01' size='3' value='" + Number(row.cells[6].innerHTML) +"' required pattern='\S(.*\S)?' title='This field is required'>";
 		row.cells[7].innerHTML = "<button class='btn btn-primary btn-sm' onclick='onAddIntensity(event)'>Apply</button> <br /> <button class='btn btn-danger btn-sm' onclick='deleteRowAction(event)' name='removeRowBtn'>Remove</button>";
+		*/
 	}
 }
 
@@ -1332,7 +1466,11 @@ function populateResultsRow(idx,resultArray) {
   row.cells[4].innerHTML = resultArray[24]; // Azimuth psi
   row.cells[5].innerHTML = resultArray[25]; // Ellipticity chi
   row.cells[6].innerHTML = resultArray[28]; // Phase difference delta
-  row.cells[7].innerHTML = determineHelicity(resultArray[3]);
+  if (resultArray[1]*resultArray[1]+resultArray[2]*resultArray[2]+resultArray[3]*resultArray[3]>0){
+	row.cells[7].innerHTML = determineHelicity(resultArray[3]);
+  }else{
+	row.cells[7].innerHTML = "Unpolarized";
+  }
 }
 
 
@@ -1365,6 +1503,7 @@ function populateIntensityDataRow(idx,resultArray){
   let table = document.getElementById("intensityTable");
   //let idx   = event.target.closest('tr').rowIndex;
   let row   = table.rows[idx];
+  row.style = ""; // TEMPORARY, WHILE INTENSITY INPUT DOES NOT WORK
   row.cells[1].innerHTML = resultArray[7];  // IH
   row.cells[2].innerHTML = resultArray[8];  // IV
   row.cells[3].innerHTML = resultArray[9];  // ID
@@ -1602,6 +1741,8 @@ function editIntensityRow(event, idx) {
 		let row   = table.rows[idx];
 		// tooltip
 		//row.dataset.tooltip = "Input for these parameters is not implemented yet.";
+		row.style = "display:none"; // TEMPORARY, WHILE INTENSITY INPUT DOES NOT WORK
+		/*
 		row.cells[1].innerHTML = "<input type='number' name='iH' id='IHinput' min='0' max='99' step='0.01' size='3' value='' required pattern='\S(.*\S)?' title='This field is required'>";
 		row.cells[2].innerHTML = "<input type='number' name='iV' id='IVinput' min='0' max='99' step='0.01' size='3' value='' required pattern='\S(.*\S)?' title='This field is required'>";
 		row.cells[3].innerHTML = "<input type='number' name='iD' id='IDinput' min='0' max='99' step='0.01' size='3' value='' required pattern='\S(.*\S)?' title='This field is required'>";
@@ -1615,6 +1756,7 @@ function editIntensityRow(event, idx) {
 		document.getElementById('IAinput').disabled = true;
 		document.getElementById('IRinput').disabled = true;
 		document.getElementById('ILinput').disabled = true;
+		*/
 	} else {
 		event.preventDefault();
 		
@@ -1738,6 +1880,9 @@ function makeCoherencyRowConstant(idx) {
 	// create input row
 	addEmptyRow();
 	
+	// add empty row to imitate unavailable intensity submission form
+	// addIntensityDataRow(document.getElementById("intensityTable").rows.length);
+	
 	// clear placeholder row #1 which is required for the page to initialize correctly
 	deletePlaceholderRows();
 	
@@ -1775,6 +1920,12 @@ function makeCoherencyRowConstant(idx) {
 	var initializeScriptsOnPage = function() {
 		initializeEllipsePlot();
 		initializeSpherePlot();
+		let table1 = document.getElementById('customStokesTable');
+		let table3 = document.getElementById('intensityTable');
+		let table5 = document.getElementById('resultsTable');
+		table1.setAttribute("class", "table table-bordered table-sm table-striped table-hover");
+		table3.setAttribute("class", "table table-bordered table-sm table-striped table-hover"); // does not help much
+		table5.setAttribute("class", "table table-bordered table-sm table-striped table-hover");
 		clearInterval(interval);
 	}	
 </script>
