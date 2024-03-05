@@ -372,7 +372,7 @@ In any of the provided web resources, I recommend to strongly beware of typos: u
 * Octave Online
 
 
-<div class="caption">Polarization state calculator. Preview version 0.2, 04.03.2024. <br /> 
+<div class="caption">Polarization state calculator. Preview version 0.3, 05.03.2024. <br /> 
 This tool has been inspired by fundamental relation between polarization and quantum properties of light, and by processing of polarimetric measurements data at <a href="https://www.oulu.fi/en/research-groups/biophotonics">OPEM Unit</a> within <a href="https://ieeexplore.ieee.org/document/9622320">Academy of Finland</a> and <a href="https://www.sintef.no/en/projects/2022/metahilight/">MetaHiLight</a> projects. <br />
 Author warmly acknowledges support and feedback from colleagues and friends. <br />
 Built with <a href="https://www.mathworks.com/matlabcentral/fileexchange/69973-generatejavascriptusingmatlabcoder">MATLAB Coder and Emscripten</a>. Runs locally in the web browser with <a href="https://webassembly.org">WebAssembly</a>. </div>
@@ -1556,6 +1556,7 @@ function disableInputRow() {
 	document.getElementById('s3Input').disabled = true;
 	document.getElementById('s3Input').name = "s3Disabled";
 	  
+	/*
 	document.getElementById('inputIntensity').disabled = true;
 	document.getElementById('IHinput').disabled = true;
 	document.getElementById('IHinput').name = "iHdisabled";
@@ -1569,6 +1570,7 @@ function disableInputRow() {
 	document.getElementById('ILinput').name = "iLdisabled";  
 	document.getElementById('IRinput').disabled = true;
 	document.getElementById('IRinput').name = "iRdisabled";  
+	*/
 	
 	/*
 	document.getElementById('inputCoherency').disabled = true;
