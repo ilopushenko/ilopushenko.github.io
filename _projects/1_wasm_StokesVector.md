@@ -6,6 +6,7 @@ description: Calculator of the polarization ellipse parameters and other data ob
 img: assets/img/1_wasm_StokesVector/Poincare_sphere.svg
 importance: 1
 category: polarization
+giscus_comments: true
 related_publications: false
 ---
 
@@ -281,7 +282,9 @@ Fully polarized light can be characterized with [polarization ellipse](https://e
 
 Each ellipse is a result of a superposition of two orthogonally linearly polarized waves with phase difference $$\delta$$ between them. Assuming that we deal with plane time-harmonic wave propagating along $$z$$ direction, the electromagnetic wave field is then described as $$\mathbf{E}=(E_x,E_y,0)$$, [Born and Wolf](#further-reading), §1.4, Eqn. (12):
 
-$$E_x = a_1 \cos{(\tau+\delta_1)}, \:\: E_y = a_2 \cos{(\tau+\delta_2)}, \:\: \tau=\omega t - \mathbf{kr}, \:\: \delta = \delta_2-\delta_1.$$
+$$E_x = a_1 \cos{(\tau+\delta_1)}, \:\: E_y = a_2 \cos{(\tau+\delta_2)},$$ 
+
+$$\tau=\omega t - \mathbf{kr}, \:\: \delta = \delta_2-\delta_1.$$
 
 Here, amplitudes $$a_1$$ and $$a_2$$ of both orthogonally polarized light waves are introduced. We would allow ourselves not to comment upon all other variables, directing the inquiring reader to the given reference for further reading. 
 
@@ -293,11 +296,11 @@ Depending on the amplitudes and phase difference, polarization ellipse can take 
 <div class="row">
 	<div class="row">
 		<div class="col-sm justify-content-center text-center">
-			<img src="/assets/img/1_wasm_StokesVector/Polarisation_ellipse2.svg" class="img-fluid rounded z-depth-1" width="70%" height="auto" title="Polarization ellipse"><br />
+			<img src="/assets/img/1_wasm_StokesVector/Polarisation_ellipse2.svg" class="img-fluid rounded z-depth-1" width="70%" height="auto" title="Polarization ellipse" style="background-color: white;"><br />
 			<div class="caption">Figure 3. Polarization ellipse and its parameters. <!--2a corresponds to the red ellipse axes, 2b corresponds to the blue axes, arrow-->Arrow corresponds to the helicity direction. Picture source: <a href="https://en.wikipedia.org/wiki/Polarization_(waves)#Polarization_ellipse">wiki</a>.</div>
 		</div>
 		<div class="col-sm justify-content-center text-center">		
-			<img src="/assets/img/1_wasm_StokesVector/Poincare_sphere.svg" class="img-fluid rounded z-depth-1" width="70%" height="auto" title="Poincaré sphere"><br />
+			<img src="/assets/img/1_wasm_StokesVector/Poincare_sphere.svg" class="img-fluid rounded z-depth-1" width="70%" height="auto" title="Poincaré sphere" style="background-color: white;"><br />
 			<div class="caption">Figure 4. Definition of the Poincaré sphere. Picture source: <a href="https://en.wikipedia.org/wiki/Unpolarized_light#Poincar%C3%A9_sphere">wiki</a>.</div>
 		</div>
 	</div>
