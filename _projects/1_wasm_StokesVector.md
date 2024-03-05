@@ -1628,6 +1628,7 @@ function enableInputRow() {
 	document.getElementById('IRinput').disabled = false;
 	document.getElementById('IRinput').name = "iR";  
 	*/
+	/*
 	document.getElementById('inputIntensity').disabled = true;
 	document.getElementById('IHinput').disabled = true;
 	document.getElementById('IHinput').name = "iH";
@@ -1641,6 +1642,7 @@ function enableInputRow() {
 	document.getElementById('ILinput').name = "iL";  
 	document.getElementById('IRinput').disabled = true;
 	document.getElementById('IRinput').name = "iR";  
+	*/
 	
 	/*
 	document.getElementById('inputCoherency').disabled = false;
