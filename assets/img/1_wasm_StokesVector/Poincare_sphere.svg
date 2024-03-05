@@ -5,7 +5,7 @@
    version="1.1"
    id="svg28"
    sodipodi:docname="Poincare_sphere.svg"
-   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,19 +23,27 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="2.2583333"
      inkscape:cx="180"
-     inkscape:cy="180"
+     inkscape:cy="180.2214"
      inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
+     inkscape:window-height="1137"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg28" />
+     inkscape:current-layer="svg28"
+     showgrid="false" />
   <clipPath
      id="clip1">
     <path
        d="M -200,-200 L 200,-200 L 200,200 L -200,200 L -200,-52 L 0,-52 L 0,-82 L -200,-82 L -200,-200 Z"
        id="path1" />
   </clipPath>
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:55.569;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+     id="rect825"
+     width="358.6716"
+     height="358.22879"
+     x="0.44280449"
+     y="0.88560891" />
   <g
      id="poincare"
      transform="translate(159.5, 195.5) scale(1,-1)">
@@ -142,7 +150,8 @@
        id="text20"><tspan
    x="64"
    y="-10"
-   id="tspan20">2χ</tspan>&#10;    </text>
+   id="tspan20">2χ</tspan>
+    </text>
     <text
        transform="scale(1,-1)"
        x="-43"
@@ -152,7 +161,8 @@
        id="text21"><tspan
    x="-43"
    y="87"
-   id="tspan21">2ψ</tspan>&#10;    </text>
+   id="tspan21">2ψ</tspan>
+    </text>
     <g
        transform="translate(-127,-154) scale(1,-1)"
        id="g24">
@@ -164,7 +174,8 @@
          id="text23"><tspan
    x="0"
    y="0"
-   id="tspan23">S</tspan>&#10;      </text>
+   id="tspan23">S</tspan>
+      </text>
       <text
          x="19.6"
          y="7.8"
@@ -185,7 +196,8 @@
          id="text25"><tspan
    x="0"
    y="0"
-   id="tspan25">S</tspan>&#10;      </text>
+   id="tspan25">S</tspan>
+      </text>
       <text
          x="19.6"
          y="7.8"
@@ -206,7 +218,8 @@
          id="text27"><tspan
    x="0"
    y="0"
-   id="tspan27">S</tspan>&#10;      </text>
+   id="tspan27">S</tspan>
+      </text>
       <text
          x="19.6"
          y="7.8"
