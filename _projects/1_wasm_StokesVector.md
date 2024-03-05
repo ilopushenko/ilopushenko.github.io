@@ -757,6 +757,7 @@ function computeSphere(){
 		x: a,
 		y: b,
 		z: c,
+		hoverinfo: 'skip',
 	}
 
 	//////////////////////
