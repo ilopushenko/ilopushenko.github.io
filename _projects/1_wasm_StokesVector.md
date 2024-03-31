@@ -358,7 +358,7 @@ It is worth noting that Stokes parameters bijectively (one-to-one) correspond to
 In any of the provided web resources, I recommend to strongly beware of typos: unfortunately, these are still quite common in polarization-related articles even in help resources for the proprietary products. This is mostly connected to either sign uncertainty, chosen form of the harmonic wave time dependence, or to the different notations used by various authors to characterize polarization ellipse and other light parameters.
 
 
-## Source code (available soon)
+## Source code
 
 * [MATLAB Exchange](https://se.mathworks.com/matlabcentral/fileexchange/162151-stokes-polarization)
 * [GitHub](https://github.com/ilopushenko/StokesPolarization)
