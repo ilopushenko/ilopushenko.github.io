@@ -28,7 +28,7 @@ related_publications: false
 
 
 <!------------------------------------------------------------ PAGE CONTENT: introduction ------------------------------------------------------------>
-This is a small app to compute and visualize parameters of either fully or partially polarized light from the supplied Stokes vector $$ S=[S_0, S_1, S_2, S_3]^T=[I, Q, U, V]^T $$. Source code for the underlying MATLAB® class will be available on GitHub and MATLAB Exchange. <!-- Examples provided below can also be launched in GNU Octave, particularly in its web version. -->
+This is a small app to compute and visualize parameters of either fully or partially polarized light from the supplied Stokes vector $$ S=[S_0, S_1, S_2, S_3]^T=[I, Q, U, V]^T $$. Source code for the underlying MATLAB® class is available on [GitHub](https://github.com/ilopushenko/StokesPolarization) and [MATLAB Exchange](https://se.mathworks.com/matlabcentral/fileexchange/162151-stokes-polarization). <!-- Examples provided below can also be launched in GNU Octave, particularly in its web version. -->
 
 In the following, we fully comply with [M. Born and E. Wolf (1980)](#further-reading), sections §1.4 and §10.8. <!-- in particular, decision and ispiration comes from .... --> For more details, please refer to these chapters or see theoretical reference at the bottom of the page.<!--, see theoretical reference at the bottom of the page, and/or have a look at the blog post. -->
 
@@ -223,12 +223,17 @@ Some short remarks before you begin working with the app:
 	</div>
 </div>
 
+> ##### TIP
+>
+> In case of the partially polarized light, this app plots polarization ellipse for the fully polarized component of light, which intensity is equal to $$\sqrt{S_1^2+S_2^2+S_3^2}$$. Here, your data is not normalized in any other way, and ellipses for all provided Stokes vectors are displayed with proper scale, which allows to compare them between each other both in terms of shape and in terms of amplitudes of the underlying light waves.
+{: .block-tip }
+
 
 ## Theoretical reference
 #### Measurement of Stokes vector
-Using polarizer-compensator configuration (experimental setup with e.g. [linear polarizer](https://en.wikipedia.org/wiki/Polarizer#Linear_polarizers) and [quarter-wave plate](https://en.wikipedia.org/wiki/Waveplate#Quarter-wave_plate)) it is possible to measure several possible [intensity values](https://en.wikipedia.org/wiki/Intensity_(physics)) of the light beam: intensity of the horizontally polarized component $$I_H$$, vertically polarized component $$I_V$$, diagonally polarized component $$I_D$$, antidiagonal component $$I_A$$, right $$I_R$$ and left $$I_L$$ circularly polarized components. This is in agreement with [Born and Wolf](#further-reading), §10.8, Eqns. (10) and (64). If light is unpolarized, then all components are equal to each other.
+Using polarizer-compensator configuration (experimental setup with e.g. [linear polarizer](https://en.wikipedia.org/wiki/Polarizer#Linear_polarizers) and [quarter-wave plate](https://en.wikipedia.org/wiki/Waveplate#Quarter-wave_plate)) it is possible to measure several [intensity values](https://en.wikipedia.org/wiki/Intensity_(physics)) of the light beam: intensity of the horizontally polarized component $$I_H$$, vertically polarized component $$I_V$$, diagonally polarized component $$I_D$$, antidiagonal component $$I_A$$, right $$I_R$$ and left $$I_L$$ circularly polarized components. This is in agreement with [Born and Wolf](#further-reading), §10.8, Eqns. (10) and (64). If light is unpolarized, then all components are equal to each other.
 
-In the literature, there are several other notations for these intensity values, introduced by different authors with different backrounds and targeting different purposes. A good review is done by [M. Mishchenko (2014)](#further-reading) and [D. Goldstein (2011)](#further-reading). Most notably, in the experimental configuration with polarizer and compensating waveplate one would usually use angles $$\theta$$ and $$\varepsilon$$ of their rotation in order to describe the measured intensities: $$I=I(\theta,\varepsilon)$$. Then,
+Most notably, in the experimental configuration with polarizer and compensating waveplate one would usually use angles $$\theta$$ and $$\varepsilon$$ of their rotation in order to describe the measured intensities: $$I=I(\theta,\varepsilon)$$. Then,
 
 $$I_H=I(0,0), \:\: I_V=I\left(\dfrac{\pi}{2},0\right),$$ 
 
@@ -246,15 +251,7 @@ $$S_2=I_D-I_A,$$
 
 $$S_3=I_R-I_L.$$
 
-{% details Click here to know more %} 
-In fact, only 4 intensity measurements are enough to compute the Stokes vector. All modern polarimeters, commercial and in-house alike, both well-developed and prototyped with account for new technological advances, rely on these equations - in one way or another. 
-
-> ##### WARNING
->
-> In this app, currently there is no way to input intensity measurements. Right now, they are only recomputed from the Stokes vector provided by the user.
-{: .block-warning }
-
-{% enddetails %}
+In the literature, Stokes vector can be defined somehow differently. <!--Usually the difference is related to the background of the author or purpose of research. -->A good overview is done by [M. Mishchenko (2014)](#further-reading) in Section 7.1. For further reading on polarized light, I would also recommend [D. Goldstein (2011)](#further-reading).
 
 
 #### Degrees of polarization
@@ -272,13 +269,9 @@ $$DoP^2=DoLP^2 + DoCP^2.$$
 
 <!-- For more details on the given equations, please refer e.g. to [E. Collett]() [R. M. A. Azzam and N. M. Bashara (1977)], §, Eqn. (). --> Degrees of polarization are quite frequently employed in polarimetric applications. <!-- with one of the most typical scenarios ... . -->
 
+
 #### Polarization ellipse and Poincaré sphere
 Fully polarized light can be characterized with [polarization ellipse](https://en.wikipedia.org/wiki/Polarization_(waves)#Polarization_ellipse). 
-
-> ##### TIP
->
-> In case of the partially polarized light, this app plots polarization ellipse for the fully polarized component of light, which intensity is equal to $$\sqrt{S_1^2+S_2^2+S_3^2}$$. Here, your data is not normalized in any way, and ellipses for all provided Stokes vectors are displayed with proper scale, which allows to compare them between each other both in terms of ellipse form and amplitudes of the underlying light waves.
-{: .block-tip }
 
 Each ellipse is a result of a superposition of two orthogonally linearly polarized waves with phase difference $$\delta$$ between them. Assuming that we deal with plane time-harmonic wave propagating along $$z$$ direction, the electromagnetic wave field is then described as $$\mathbf{E}=(E_x,E_y,0)$$, [Born and Wolf](#further-reading), §1.4, Eqn. (12):
 
@@ -359,20 +352,22 @@ It is worth noting that Stokes parameters bijectively (one-to-one) correspond to
 1. [M. Born and E. Wolf. Principles of Optics, 6th Edition. Pergamon Press (1980).](https://en.m.wikipedia.org/wiki/Principles_of_Optics#:~:text=Principles%20of%20Optics%2C%20colloquially%20known,in%201959%20by%20Pergamon%20Press) <!-- https://www.sciencedirect.com/book/9780080264820/principles-of-optics#book-info -->
 2. [M. I. Mishchenko. Electromagnetic Scattering by Particles and Particle Groups: An Introduction. Cambridge University Press (2014).](https://www.cambridge.org/9780521519922)
 3. [D. H. Goldstein. Polarized Light, 3rd Edition. CRC Press (2011).](https://doi.org/10.1201/b10436)
-4. Wiki: numerous in-line references to Wikipedia articles all around this page.
-5. [MATLAB reference on polarization.](https://se.mathworks.com/help/phased/ug/polarized-fields.html)
+4. [MATLAB reference on polarization.](https://se.mathworks.com/help/phased/ug/polarized-fields.html)
+5. Wiki: numerous in-line references to Wikipedia articles all around this page.
 
 In any of the provided web resources, I recommend to strongly beware of typos: unfortunately, these are still quite common in polarization-related articles even in help resources for the proprietary products. This is mostly connected to either sign uncertainty, chosen form of the harmonic wave time dependence, or to the different notations used by various authors to characterize polarization ellipse and other light parameters.
 
 
 ## Source code (available soon)
 
-* MATLAB Exchange
-* GitHub
-* Octave Online
+* [MATLAB Exchange](https://se.mathworks.com/matlabcentral/fileexchange/162151-stokes-polarization)
+* [GitHub](https://github.com/ilopushenko/StokesPolarization)
 
 
-<div class="caption">Polarization state calculator. Preview version 0.3, 05.03.2024. <br /> 
+<!-- * Octave Online -->
+
+
+<div class="caption">Polarization state calculator. Preview version 0.5, 31.03.2024. <br /> 
 This tool has been inspired by fundamental relation between polarization and quantum properties of light, and by processing of polarimetric measurements data at <a href="https://www.oulu.fi/en/research-groups/biophotonics">OPEM Unit</a> within <a href="https://ieeexplore.ieee.org/document/9622320">Academy of Finland</a> and <a href="https://www.sintef.no/en/projects/2022/metahilight/">MetaHiLight</a> projects. <br />
 Author warmly acknowledges support and feedback from colleagues and friends. <br />
 Built with <a href="https://www.mathworks.com/matlabcentral/fileexchange/69973-generatejavascriptusingmatlabcoder">MATLAB Coder and Emscripten</a>. Runs locally in the web browser with <a href="https://webassembly.org">WebAssembly</a>. </div>
