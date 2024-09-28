@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: portfolio of courses
+description: portfolio of activities
 nav: true
 nav_order: 6
 ---
@@ -32,7 +32,7 @@ nav_order: 6
     <div class="row">
       <div class="col-sm-10">
         <h5 class="card-title"><a href="https://moodle.oulu.fi/course/view.php?id=10862" target="_blank" rel="noopener noreferrer">521240S: Biophotonics and Biomedical Optics</a></h5>
-        <h6 class="card-subtitle font-italic">Autumn 2021-2022: teaching assistance. Lecture on Monte Carlo simulations.</h6>
+        <h6 class="card-subtitle font-italic">Years 2021-2022: teaching assistance. Lecture on Monte Carlo simulations.</h6>
       </div>
 	  <!-- 
       <div class="col-sm-2 text-sm-right">
