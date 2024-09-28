@@ -9,7 +9,7 @@ nav_order: 6
 
 <hr>
 <h3>University of Oulu</h3>
-<h4><a href="https://www.nature.com/articles/s41598-024-70954-x>Co-supervision of students from Aston University</a></h4>
+<h4><a href="https://www.nature.com/articles/s41598-024-70954-x">Co-supervision of students from Aston University</a></h4>
 <div class="card mt-3">
   <div class="p-3">
     <div class="row">
