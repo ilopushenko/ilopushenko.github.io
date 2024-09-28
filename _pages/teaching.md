@@ -9,11 +9,29 @@ nav_order: 6
 
 <hr>
 <h3>University of Oulu</h3>
+<h4><a href="https://www.nature.com/articles/s41598-024-70954-x>Co-supervision of students from Aston University</a></h4>
 <div class="card mt-3">
   <div class="p-3">
     <div class="row">
       <div class="col-sm-10">
-        <h5 class="card-title"><a href="https://moodle.oulu.fi/course/view.php?id=10862" target="_blank" rel="noopener noreferrer">Biophotonics and Biomedical Optics</a></h5>
+        <h5 class="card-title"><a href="https://moodle.oulu.fi/course/view.php?id=10862" target="_blank" rel="noopener noreferrer">521124S: Electronic Sensors</a></h5>
+        <h6 class="card-subtitle font-italic">Autumn 2024: teacher (seminar classes and exercises).</h6>
+      </div>
+	  <!-- 
+      <div class="col-sm-2 text-sm-right">
+        <span class="badge">
+          ? ECTS
+        </span>
+      </div>
+	  -->
+    </div>
+  </div>
+</div>
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 class="card-title"><a href="https://moodle.oulu.fi/course/view.php?id=10862" target="_blank" rel="noopener noreferrer">521240S: Biophotonics and Biomedical Optics</a></h5>
         <h6 class="card-subtitle font-italic">Autumn 2021/2022: teaching assistance. Lecture on Monte Carlo simulations.</h6>
       </div>
 	  <!-- 
