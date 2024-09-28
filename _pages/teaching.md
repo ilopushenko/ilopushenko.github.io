@@ -47,7 +47,7 @@ nav_order: 6
 <br />
 <hr>
 <h3>Lomonosov Moscow State University</h3>
-<h4><a href="https://istina.msu.ru/diplomas/coursework/241696402/">Student coursework supervision</a></h4>
+<h4><a href="https://istina.msu.ru/diplomas/coursework/241696402/">Student supervision</a></h4>
 <h4>General courses</h4>
 <div class="card mt-3">
   <div class="p-3">
