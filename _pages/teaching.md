@@ -14,8 +14,9 @@ nav_order: 6
   <div class="p-3">
     <div class="row">
       <div class="col-sm-10">
+	    <h5 class="card-title"><a href="https://moodle.oulu.fi/course/view.php?id=25571" target="_blank" rel="noopener noreferrer">521124S: Electronic Sensors</a></h5>
         <!-- <h5 class="card-title"><a href="https://moodle.oulu.fi/enrol/index.php?id=11006" target="_blank" rel="noopener noreferrer">521124S: Electronic Sensors</a></h5> -->
-		<h5 class="card-title"><a href="https://opas.peppi.oulu.fi/en/course/521124S/991?period=2024-2025" target="_blank" rel="noopener noreferrer">521124S: Electronic Sensors</a></h5> 
+		<!-- <h5 class="card-title"><a href="https://opas.peppi.oulu.fi/en/course/521124S/991?period=2024-2025" target="_blank" rel="noopener noreferrer">521124S: Electronic Sensors</a></h5> -->
         <h6 class="card-subtitle font-italic">Year 2024-2025: teacher (seminar/exercise classes).</h6>
       </div>
 	  <!-- 
