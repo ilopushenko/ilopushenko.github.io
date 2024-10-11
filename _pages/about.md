@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Mathematical physics</a> | Computer modeling | Interactive tools | Knowledge sharing <!--•--> @ <a href="https://www.oulu.fi/en/research-groups/biophotonics">University of Oulu</a>.
+subtitle: Mathematical physics</a> | Computer modeling | Interactive tools | Knowledge sharing <!--•--> @ <a href="https://www.oulu.fi/en/researchers/ivan-lopushenko">University of Oulu</a>.
 
 profile:
   align: right
