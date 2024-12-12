@@ -14,7 +14,9 @@ nav_order: 2
 Selected papers, proceedings and theses. <br />
 An extended<!--complete--> list is available on <a href="https://scholar.google.com/citations?user=TaUMnVQAAAAJ&hl=en">Google Scholar</a>.
 
-<!-- <h1 id="preprints">Preprints</h1> -->
+<h1 id="preprints">Preprints</h1>
+
+{% bibliography --file preprints %}
 
 <h1 id="papers">Journal & conference papers</h1>
 
