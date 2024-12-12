@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Selected papers, proceedings and theses.
+description: 
 nav: true
 nav_order: 2
 ---
@@ -11,6 +11,7 @@ nav_order: 2
 <div class="publications">
 
 <!-- Selected <a href="#preprints">preprints</a>, <a href="#papers">papers</a>, <a href="#talks">talks</a> and <a href="#theses">theses</a>. <br /> -->
+Selected papers, proceedings and theses. <br />
 An extended<!--complete--> list is available on <a href="https://scholar.google.com/citations?user=TaUMnVQAAAAJ&hl=en">Google Scholar</a>.
 
 <!-- <h1 id="preprints">Preprints</h1> -->
