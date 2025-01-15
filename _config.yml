@@ -283,7 +283,7 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 
 scholar:
   last_name: [Lopushenko]
-  first_name: [Ivan V., I. V.]
+  first_name: [Ivan V., I. V., Ivan]
 
   style: apa
   locale: en
