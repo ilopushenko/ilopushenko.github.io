@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 
 Welcome to my personal webpage and thanks for stopping by! 
 
-I'm a researcher at the intersection of computational physics, numerical methods and electromagnetics, with focus on wave scattering. 
+I'm a researcher at the intersection of computational physics, numerical methods and electromagnetics, with focus on light scattering. 
 
 At the moment I conduct <b>postdoctoral studies</b> in Finland covering the fields of biophotonics and mesoscopic electrodynamics, building simulation tools that help to acquire new knowledge in between quantum and classical physics. 
 
