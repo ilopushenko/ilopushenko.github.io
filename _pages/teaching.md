@@ -10,9 +10,9 @@ nav_order: 6
 <hr>
 <h3>University of Oulu</h3>
 <h5>
-Co-supervision of PhD and MSc students within FLOW! project at <a href="https://www.oulu.fi/en/projects/novel-research-instrument-for-measuring-vascular-health" target="_blank" rel="noopener noreferrer">Biocenter Oulu.</a>
+Co-supervision of PhD and MSc students within FLOW! project at <a href="https://www.oulu.fi/en/projects/novel-research-instrument-for-measuring-vascular-health" target="_blank" rel="noopener noreferrer">Biocenter Oulu</a>.
 <br>
-Co-supervision of PhD students from <a href="https://www.nature.com/articles/s41598-024-70954-x" target="_blank" rel="noopener noreferrer">Aston University.</a>
+Co-supervision of PhD students from <a href="https://www.nature.com/articles/s41598-024-70954-x" target="_blank" rel="noopener noreferrer">Aston University</a>.
 </h5>
 <div class="card mt-3">
   <div class="p-3">
