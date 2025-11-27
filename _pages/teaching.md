@@ -9,11 +9,11 @@ nav_order: 6
 
 <hr>
 <h3>University of Oulu</h3>
-<h4>
+<h5>
 Co-supervision of PhD and MSc students within FLOW! project at <a href="https://www.oulu.fi/en/projects/novel-research-instrument-for-measuring-vascular-health" target="_blank" rel="noopener noreferrer">Biocenter Oulu.</a>
 <br>
 Co-supervision of PhD students from <a href="https://www.nature.com/articles/s41598-024-70954-x" target="_blank" rel="noopener noreferrer">Aston University.</a>
-</h4>
+</h5>
 <div class="card mt-3">
   <div class="p-3">
     <div class="row">
@@ -55,11 +55,11 @@ Co-supervision of PhD students from <a href="https://www.nature.com/articles/s41
 <br />
 <hr>
 <h3>Lomonosov Moscow State University</h3>
-<h4>
+<h5>
 Years 2018-2019: BSc student supervision at <a href="https://istina.msu.ru/diplomas/coursework/241696402/" target="_blank" rel="noopener noreferrer">Faculty of Physics</a>.
 <br>
 Years 2016-2018: Supervising projects of high school students within <a href="https://news.samsung.com/ru/samsung-%d0%be%d0%b1%d1%8a%d1%8f%d0%b2%d0%b8%d0%bb%d0%b0-%d0%bf%d0%be%d0%b1%d0%b5%d0%b4%d0%b8%d1%82%d0%b5%d0%bb%d0%b5%d0%b9-%d0%b2%d1%81%d0%b5%d1%80%d0%be%d1%81%d1%81%d0%b8%d0%b9%d1%81%d0%ba%d0%be" target="_blank" rel="noopener noreferrer">Samsung IT School</a>.
-</h4>
+</h5>
 <h4>General courses</h4>
 <div class="card mt-3">
   <div class="p-3">
