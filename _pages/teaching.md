@@ -9,26 +9,11 @@ nav_order: 6
 
 <hr>
 <h3>University of Oulu</h3>
-<div class="card mt-3">
-  <div class="p-3">
-    <div class="row">
-      <div class="col-sm-10">
-	    <h5 class="card-title">Supervision activities</h5>
-        <!-- <h5 class="card-title"><a href="https://moodle.oulu.fi/enrol/index.php?id=11006" target="_blank" rel="noopener noreferrer">521124S: Electronic Sensors</a></h5> -->
-		<!-- <h5 class="card-title"><a href="https://opas.peppi.oulu.fi/en/course/521124S/991?period=2024-2025" target="_blank" rel="noopener noreferrer">521124S: Electronic Sensors</a></h5> -->
-		<h6 class="card-subtitle font-italic">Co-supervision of PhD and MSc students within FLOW! project at <a href="https://www.oulu.fi/en/projects/novel-research-instrument-for-measuring-vascular-health" target="_blank" rel="noopener noreferrer">Biocenter Oulu.</a><br>
-        Co-supervision of PhD students from <a href="https://www.nature.com/articles/s41598-024-70954-x" target="_blank" rel="noopener noreferrer">Aston University.</a></h6>
-      </div>
-	  <!-- 
-      <div class="col-sm-2 text-sm-right">
-        <span class="badge">
-          ? ECTS
-        </span>
-      </div>
-	  -->
-    </div>
-  </div>
-</div>
+<h4>
+Co-supervision of PhD and MSc students within FLOW! project at <a href="https://www.oulu.fi/en/projects/novel-research-instrument-for-measuring-vascular-health" target="_blank" rel="noopener noreferrer">Biocenter Oulu.</a>
+<br>
+Co-supervision of PhD students from <a href="https://www.nature.com/articles/s41598-024-70954-x" target="_blank" rel="noopener noreferrer">Aston University.</a>
+</h4>
 <div class="card mt-3">
   <div class="p-3">
     <div class="row">
@@ -70,28 +55,12 @@ nav_order: 6
 <br />
 <hr>
 <h3>Lomonosov Moscow State University</h3>
-<h4>General courses and activities</h4>
-<div class="card mt-3">
-  <div class="p-3">
-    <div class="row">
-      <div class="col-sm-10">
-	    <h5 class="card-title">Supervision activities</h5>
-        <!-- <h5 class="card-title"><a href="https://moodle.oulu.fi/enrol/index.php?id=11006" target="_blank" rel="noopener noreferrer">521124S: Electronic Sensors</a></h5> -->
-		<!-- <h5 class="card-title"><a href="https://opas.peppi.oulu.fi/en/course/521124S/991?period=2024-2025" target="_blank" rel="noopener noreferrer">521124S: Electronic Sensors</a></h5> -->
-		<h6 class="card-subtitle font-italic">Years 2018-2019: BSc student supervision at <a href="https://istina.msu.ru/diplomas/coursework/241696402/" target="_blank" rel="noopener noreferrer">Faculty of Physics</a>.<br>
-		Years 2016-2018: Supervising projects of high school students within <a href="https://news.samsung.com/ru/samsung-%d0%be%d0%b1%d1%8a%d1%8f%d0%b2%d0%b8%d0%bb%d0%b0-%d0%bf%d0%be%d0%b1%d0%b5%d0%b4%d0%b8%d1%82%d0%b5%d0%bb%d0%b5%d0%b9-%d0%b2%d1%81%d0%b5%d1%80%d0%be%d1%81%d1%81%d0%b8%d0%b9%d1%81%d0%ba%d0%be" target="_blank" rel="noopener noreferrer">Samsung IT School</a>.</h6> 
-		<!-- Years 2016-2018: Supervising projects of high school students in programming for Android devices (see Samsung IT School below).</h6> -->
-      </div>
-	  <!-- 
-      <div class="col-sm-2 text-sm-right">
-        <span class="badge">
-          ? ECTS
-        </span>
-      </div>
-	  -->
-    </div>
-  </div>
-</div>
+<h4>
+Years 2018-2019: BSc student supervision at <a href="https://istina.msu.ru/diplomas/coursework/241696402/" target="_blank" rel="noopener noreferrer">Faculty of Physics</a>.
+<br>
+Years 2016-2018: Supervising projects of high school students within <a href="https://news.samsung.com/ru/samsung-%d0%be%d0%b1%d1%8a%d1%8f%d0%b2%d0%b8%d0%bb%d0%b0-%d0%bf%d0%be%d0%b1%d0%b5%d0%b4%d0%b8%d1%82%d0%b5%d0%bb%d0%b5%d0%b9-%d0%b2%d1%81%d0%b5%d1%80%d0%be%d1%81%d1%81%d0%b8%d0%b9%d1%81%d0%ba%d0%be" target="_blank" rel="noopener noreferrer">Samsung IT School</a>.
+</h4>
+<h4>General courses</h4>
 <div class="card mt-3">
   <div class="p-3">
     <div class="row">
