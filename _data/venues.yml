@@ -2,6 +2,10 @@
   url: https://arxiv.org/
   color: "#00369f"
   
+"LPR":
+  url: https://onlinelibrary.wiley.com/journal/18638899
+  color: "#00369f"  
+  
 "JBO":
   url: https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics
   color: "#00369f"
