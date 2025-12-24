@@ -4,7 +4,11 @@
   
 "LPR":
   url: https://onlinelibrary.wiley.com/journal/18638899
-  color: "#00369f"  
+  color: "#00369f" 
+
+"PIERS":
+  url: https://piers.org/
+  color: "#00369f"   
   
 "JBO":
   url: https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics
