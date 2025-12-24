@@ -9,9 +9,11 @@ display_categories: [polarization]
 horizontal: false
 ---
 
-Interactive web apps: polarization state (<a href="https://ilopushenko.github.io/projects/stokes" target="_blank" rel="noopener noreferrer">web app & reference info on polarization ellipse</a>, <a href="https://github.com/ilopushenko/StokesPolarization" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://se.mathworks.com/matlabcentral/fileexchange/162151-stokes-polarization" target="_blank" rel="noopener noreferrer">MATLAB Exchange</a>).
+<h3>Interactive web apps: </h3> <br>
+- Polarization state calculator <br> (Links: <a href="https://ilopushenko.github.io/projects/stokes" target="_blank" rel="noopener noreferrer">web app & reference info on polarization ellipse</a>; <a href="https://github.com/ilopushenko/StokesPolarization" target="_blank" rel="noopener noreferrer">GitHub</a>; <a href="https://se.mathworks.com/matlabcentral/fileexchange/162151-stokes-polarization" target="_blank" rel="noopener noreferrer">MATLAB Exchange</a>).
 
-Libraries: MATLAB interface to W. Wiscombe Mie scattering Fortran program MIEV0 (<a href="https://github.com/ilopushenko/miev0_matlab_interface/releases" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://doi.org/10.5281/zenodo.17069741" target="_blank" rel="noopener noreferrer">Zenodo DOI</a>, <a href="https://se.mathworks.com/matlabcentral/fileexchange/181979-matlab-interface-to-w-wiscombe-s-mie-scattering-program" target="_blank" rel="noopener noreferrer">MATLAB Exchange</a>).
+<h3>Libraries:</h3> <br> 
+- MATLAB interface to W. Wiscombe Mie scattering Fortran program MIEV0 <br> (Links: <a href="https://github.com/ilopushenko/miev0_matlab_interface/releases" target="_blank" rel="noopener noreferrer">GitHub</a>; <a href="https://doi.org/10.5281/zenodo.17069741" target="_blank" rel="noopener noreferrer">Zenodo DOI</a>; <a href="https://se.mathworks.com/matlabcentral/fileexchange/181979-matlab-interface-to-w-wiscombe-s-mie-scattering-program" target="_blank" rel="noopener noreferrer">MATLAB Exchange</a>).
 
 <!-- pages/projects.md -->
 <div class="projects">
